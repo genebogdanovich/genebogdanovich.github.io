@@ -1,0 +1,216 @@
+/* =================================
+      Variables
+==================================== */
+
+:root {
+    --color-primary: #1b96f3;
+    --color-secondary: #10133a;
+    --color-bg: whitesmoke;
+    --color-bg-light: white;
+    --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    /*--font-stack-secondary: "Bree Serif", serif;*/
+    --max-width: 1000px;
+    --gutter: 12px;
+}
+
+/* =================================
+  Reset
+==================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 8px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+body {
+    font-family: var(--font-stack-primary);
+    font-size: 16px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* Mobile menu */
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+
+.item {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.active .item {
+    /* Apply this class to an element to show it. */
+    display: block;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 8px 10px 8px 0;
+}
+
+.item {
+    padding: 10px;
+}
+
+nav {
+    padding: 0 15px;
+}
+
+.avatar {
+    height: 200px;
+    border-radius: 50%;
+    padding: 16px;
+}
+
+.icon-img {
+    height: 32px;
+    margin: 4px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+.grid {
+    /*max-width: 800px;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    justify-content: flex-start;
+
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill-img {
+    height: 64px;
+}
+
+
+/* =================================
+  Styles
+==================================== */
+
+
+
+.skill {
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--color-secondary);
+}
+
+
+.intro {
+    background-color: var(--color-bg-light);
+}
+
+.skills {
+    background-color: var(--color-bg);
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+}
+
+/* Desktop menu */
+
+@media all and (min-width: 960px) {
+    .menu {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+
+    .toggle {
+        display: none;
+    }
+}
+
+/* =================================
+  States
+==================================== */
+
+.item a:hover,
+.item a:hover::after {
+    color: #ccc;
+}
+
+/* =================================
+  Transitions
+==================================== */
+
