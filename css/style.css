@@ -8,7 +8,7 @@
     --color-secondary: #10133a;
     --color-bg: whitesmoke;
     --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-    /*--font-stack-secondary: "Bree Serif", serif;*/
+    --font-stack-secondary: 'Source Serif Pro', serif;
     --gutter: 12px;
 }
 
@@ -34,7 +34,18 @@ li {
   Base Element Styles
 ==================================== */
 
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
 body {
+    font-size: 18px;
     font-family: var(--font-stack-primary);
 }
 
@@ -81,7 +92,7 @@ body {
 }
 
 .logo {
-    font-size: 20px;
+    font-weight: bold;
     padding: 8px 10px 8px 0;
 }
 
@@ -91,6 +102,13 @@ body {
 
 nav {
     padding: 0 15px;
+}
+
+
+/* Sections */
+
+.section-heading {
+    text-align: center;
 }
 
 /* Introduction section */
@@ -106,7 +124,6 @@ nav {
 
 .icon-container {
     display: flex;
-    grid-gap: var(--gutter);
 }
 
 .intro {
@@ -159,12 +176,19 @@ nav {
 
 .tag-container {
     display: flex;
-    grid-gap: 8px;
 }
 
 /* =================================
   Styles
 ==================================== */
+
+.description-text {
+    font-family: var(--font-stack-secondary);
+}
+
+.intro-words {
+    font-size: 21px;
+}
 
 nav {
     background-color: var(--color-secondary);
@@ -193,7 +217,6 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-gap: 8px;
     background-color: var(--color-secondary);
     padding: 4px;
 }
@@ -225,6 +248,7 @@ nav a {
 
     .intro-card {
         flex-grow: 2;
+        width: 100px;
     }
 
     .personal-card {
