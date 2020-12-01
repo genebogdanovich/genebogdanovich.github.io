@@ -6,10 +6,8 @@
     --color-primary: #1b96f3;
     --color-secondary: #10133a;
     --color-bg: whitesmoke;
-    --color-bg-light: white;
     --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     /*--font-stack-secondary: "Bree Serif", serif;*/
-    --max-width: 1000px;
     --gutter: 12px;
 }
 
@@ -17,16 +15,15 @@
   Reset
 ==================================== */
 
-* {
+*, h1, h2, h3 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-h1 {
-    margin: 8px;
+a {
+    text-decoration: none;
 }
-
 
 li {
     list-style-type: none;
@@ -38,24 +35,20 @@ li {
 
 body {
     font-family: var(--font-stack-primary);
-    font-size: 16px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    padding: 10px;
 }
 
 /* =================================
   Base Layout Styles
 ==================================== */
 
-/* Mobile menu */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    justify-content: flex-start;
+}
+
+/* Navigation bar - mobile */
 
 .menu {
     display: flex;
@@ -99,61 +92,80 @@ nav {
     padding: 0 15px;
 }
 
+/* Introduction section */
+
 .avatar {
     height: 200px;
     border-radius: 50%;
-    padding: 16px;
 }
 
 .icon-img {
     height: 32px;
-    margin: 4px;
 }
 
 .icon-container {
     display: flex;
-    justify-content: center;
+    grid-gap: var(--gutter);
 }
 
 .intro {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.grid {
-    /*max-width: 800px;*/
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 10px;
-    justify-content: flex-start;
-
+.intro-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
+
+.personal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Skills section */
 
 .skill {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skill-img {
     height: 64px;
 }
 
+/* Projects section */
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-img {
+    height: 400px;
+}
 
 /* =================================
   Styles
 ==================================== */
 
-
-
-.skill {
-    padding: 20px;
-}
-
 nav {
     background-color: var(--color-secondary);
 }
 
-
-.intro {
-    background-color: var(--color-bg-light);
+nav a {
+    color: white;
 }
 
 .skills {
@@ -165,6 +177,7 @@ nav {
 ==================================== */
 
 @media all and (min-width: 700px) {
+    /* Navigation bar */
     .menu {
         justify-content: center;
     }
@@ -173,11 +186,36 @@ nav {
         flex: 1;
     }
 
+    /* Introduction section */
+
+    .intro {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .intro-card {
+        flex-grow: 2;
+    }
+
+    .personal-card {
+        flex-grow: 1;
+    }
+
+    /* Projects section */
+
+    .project {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .project-description {
+        width: 300px;
+    }
 }
 
 /* Desktop menu */
-
 @media all and (min-width: 960px) {
+    /* Navigation bar */
     .menu {
         align-items: flex-start;
         flex-wrap: nowrap;
@@ -194,7 +232,6 @@ nav {
         display: block;
         width: auto;
     }
-
 
     .toggle {
         display: none;
