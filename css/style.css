@@ -4,6 +4,7 @@
 
 :root {
     --color-primary: #1b96f3;
+    --color-primary-opacity: rgba(27, 150, 243, 0.2);
     --color-secondary: #10133a;
     --color-bg: whitesmoke;
     --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
@@ -156,6 +157,18 @@ nav {
     height: 400px;
 }
 
+.tag-container {
+    display: flex;
+    grid-gap: var(--gutter);
+}
+
+.tag {
+    background-color: var(--color-primary-opacity);
+    padding: 4px;
+    color: var(--color-primary);
+    border-radius: 24px;
+}
+
 /* =================================
   Styles
 ==================================== */
@@ -209,7 +222,7 @@ nav a {
     }
 
     .project-description {
-        width: 300px;
+        width: 400px;
     }
 }
 
