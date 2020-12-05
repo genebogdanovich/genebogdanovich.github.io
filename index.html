@@ -1,117 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Gene Bogdanovich</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>Gene Bogdanovich | Aspiring iOS Developer</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-<header>
-        <nav>
-            <ul class="menu">
-                <li class="logo"><a class="logo" href="#">Gene Bogdanovich</a></li>
-                <li class="item"><a href="#">Home</a></li>
-                <li class="item"><a href="#">Projects</a></li>
-                <li class="item"><a href="#">Blog</a></li>
-                <li class="item"><a href="#">Resume</a></li>
-                <li class="item"><a href="#">About</a></li>
-                <li class="item"><a href="#">Contact</a></li>
-                <li class="toggle"><a href="#"><i class="fa fa-bars"></i></a></li>
-            </ul>
-        </nav>
+
+<nav>
+    <ul class="navigation">
+        <li><a href="#">Gene Bogdanovich</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="header">
+
+    <div class="header__card">
+
+        <img class="header__avatar" src="img/avatar.jpg" alt="Gene Bogdanovich">
+        <h2>Gene Bogdanovich</h2>
+        <p>Aspiring iOS Developer</p>
+
+        <ul class="header__icon-container">
+            <li><a href="#" target="_blank"><img src="img/social/email@3x.png" alt="Email icon"></a></li>
+            <li><a href="#" target="_blank"><img src="img/social/github@3x.png" alt="GitHub icon"></a></li>
+            <li><a href="#" target="_blank"><img src="img/social/linkedin@3x.png" alt="LinkedIn icon"></a></li>
+            <li><a href="#" target="_blank"><img src="img/social/twitter@3x.png" alt="Twitter icon"></a></li>
+        </ul>
+
+    </div>
+
+    <div class="header__text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary--main">Hi, I'm Gene,</span>
+            <span class="heading-primary--sub">an aspiring iOS Developer based in Minsk, Belarus focused on SwiftUI & Combine. Open for internships and junior positions.</span>
+        </h1>
+    </div>
+
 </header>
-<main>
-    <section class="intro">
-        <div class="personal-card">
-            <img class="avatar" src="img/avatar.jpg" alt="A photo of Gene Bogdanovich">
-            <h2>Gene Bogdanovich</h2>
-            <p>Aspiring iOS Developer</p>
-            <ul class="icon-container">
-                <li><a href="mailto:genebogdanovich@gmail.com" target="_blank"><img class="icon-img" src="img/social/email@3x.png" alt="An email icon"></a></li>
-                <li><a href="https://github.com/genebogdanovich" target="_blank"><img class="icon-img" src="img/social/github@3x.png" alt="A GitHub icon"></a></li>
-                <li><a href="#" target="_blank"><img class="icon-img" src="img/social/linkedin@3x.png" alt="A LinkedIn icon"></a></li>
-                <li><a href="https://twitter.com/GeneBogdanovich" target="_blank"><img class="icon-img" src="img/social/twitter@3x.png" alt="A Twitter icon"></a></li>
-            </ul>
-        </div>
-        <div class="intro-card">
-            <h1>Hi, I'm Gene,</h1>
-            <p class="intro-words">an aspiring iOS Developer based in <b>Minsk, Belarus</b> focused on <b>SwiftUI & Combine</b>. Open for <b>internships</b> and <b>junior</b> positions.</p>
-        </div>
-    </section>
-
-    <section class="skills">
-        <h1>Skills</h1>
-        <ul class="grid">
-            <li class="skill">
-                <img class="skill-img" src="img/skills/swift@3x.png" alt="A Swift logo">
-                <h2>Swift & iOS</h2>
-                <p>A couple of words about the skill.</p>
-            </li>
-            <li class="skill">
-                <img class="skill-img" src="img/skills/html@3x.png" alt="An HTML logo">
-                <h2>HTML & CSS</h2>
-                <p>A couple of words about the skill.</p>
-            </li>
-            <li class="skill">
-                <img class="skill-img" src="img/skills/sketch@3x.png" alt="A Sketch logo">
-                <h2>Sketch & Design</h2>
-                <p>A couple of words about the skill.</p>
-            </li>
-            <li class="skill">
-                <img class="skill-img" src="img/skills/databases@3x.png" alt="A database icon">
-                <h2>SQL & Databases</h2>
-                <p>A couple of words about the skill.</p>
-            </li>
-            <li class="skill">
-                <img class="skill-img" src="img/skills/english@3x.png" alt="An American flag icon">
-                <h2>Confident English</h2>
-                <p>A couple of words about the skill.</p>
-            </li>
-            <li class="skill">
-                <img class="skill-img" src="img/skills/sun@3x.png" alt="A sun icon">
-                <h2>Emotional Intelligence</h2>
-                <p>A couple of words about the skill.</p>
-            </li>
-        </ul>
-    </section>
-
-    <section class="projects">
-        <h1>Projects</h1>
-        <ul>
-            <li class="project">
-
-                <div class="project-description">
-
-                    <h2>RemindMe</h2>
-                    <p class="description-text">RemindMe is an elegant and simple reminder app that will never let you miss another important task.
-                        It is built using Apple’s latest technologies in iOS Development.</p>
-
-                    <ul class="tag-container">
-                        <li class="tag">SwiftUI</li>
-                        <li class="tag">Combine</li>
-                        <li class="tag">Core Data</li>
-                        <li class="tag">MVVM</li>
-                    </ul>
-
-
-                    <div class="github-button">
-                        <a href="https://github.com/genebogdanovich/RemindMe" target="_blank">Checkout on GitHub</a>
-                        <img class="github-button-img" src="img/social/github-white@3x.png" alt="A GitHub icon">
-                    </div>
-
-                </div>
-
-                <img class="project-img" src="img/apps/remindme.png" alt="A screenshot of RemindMe app">
-
-
-            </li>
-        </ul>
-    </section>
-</main>
-<script src="js/script.js"></script>
 </body>
 </html>
 

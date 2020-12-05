@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // Root font size.
+  // 10px / 16 = 62.5%.
+  font-size: 62.5%;
+  // This is 10px. Use rem units to set sizes. Example: 17px is 1.7rem.
+}
+
+body {
+  box-sizing: border-box;
+}
