@@ -1,0 +1,37 @@
+/* =================================
+  Top navigation
+==================================== */
+
+.top-nav {
+  // Layout
+  background-color: var(--color-secondary);
+  min-height: 7vh;
+  text-align: center;
+
+  // Style
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+
+    &__link-box {
+      display: flex;
+
+      li {
+        margin-left: 2rem;
+      }
+    }
+  }
+}

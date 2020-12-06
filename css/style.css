@@ -14,4 +14,33 @@ body {
 body {
   font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 400;
-  line-height: 1.7; }
+  line-height: 1.7;
+  font-size: 1.6rem; }
+
+:root {
+  --color-primary: #1b96f3;
+  --color-secondary: #10133a; }
+
+/* =================================
+  Top navigation
+==================================== */
+.top-nav {
+  background-color: var(--color-secondary);
+  min-height: 7vh;
+  text-align: center; }
+  .top-nav a {
+    text-decoration: none;
+    color: white; }
+  .top-nav ul {
+    list-style-type: none; }
+
+@media (min-width: 700px) {
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem; }
+    .top-nav__link-box {
+      display: flex; }
+      .top-nav__link-box li {
+        margin-left: 2rem; } }
