@@ -8,40 +8,57 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="container">
 
 <nav class="top-nav">
-    <div class="logo-box"><a href="#">Gene Bogdanovich</a></div>
-
     <ul class="top-nav__link-box">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="top-nav__item"><a class="top-nav__link" href="#">Gene Bogdanovich</a></li>
+        <li class="top-nav__item"><a class="top-nav__link" href="#">Home</a></li>
+        <li class="top-nav__item"><a class="top-nav__link" href="#">Projects</a></li>
     </ul>
 </nav>
 
 
 
 
-<header class="header">
+
 
     <div class="header__card">
 
-        <img class="header__avatar" src="img/avatar.jpg" alt="Gene Bogdanovich">
-        <h2>Gene Bogdanovich</h2>
-        <p>Aspiring iOS Developer</p>
+        <img class="avatar" src="https://i.ibb.co/6sBHjQd/avatar.jpg" alt="Gene Bogdanovich">
+        <h2 class="heading-secondary">
+            <span class="heading-secondary--main">Gene Bogdanovich</span>
+            <span class="heading-secondary--sub">Aspiring iOS Developer</span>
+        </h2>
 
         <ul class="header__icon-container">
-            <li><a href="#" target="_blank"><img src="img/social/email@3x.png" alt="Email icon"></a></li>
-            <li><a href="#" target="_blank"><img src="img/social/github@3x.png" alt="GitHub icon"></a></li>
-            <li><a href="#" target="_blank"><img src="img/social/linkedin@3x.png" alt="LinkedIn icon"></a></li>
-            <li><a href="#" target="_blank"><img src="img/social/twitter@3x.png" alt="Twitter icon"></a></li>
+            <li class="header__item"><a class="header__link" href="#" target="_blank">
+                <svg class="header__icon">
+                    <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
+            </a></li>
+            <li class="header__item"><a class="header__link" href="#" target="_blank">
+                <svg class="header__icon">
+                    <use xlink:href="img/sprite.svg#github"></use>
+                </svg>
+            </a></li>
+            <li class="header__item"><a class="header__link" href="#" target="_blank">
+                <svg class="header__icon">
+                    <use xlink:href="img/sprite.svg#linkedin"></use>
+                </svg>
+            </a></li>
+            <li class="header__item"><a class="header__link" href="#" target="_blank">
+                <svg class="header__icon">
+                    <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+            </a></li>
+
         </ul>
 
     </div>
+
+
+
 
     <div class="header__text-box">
         <h1 class="heading-primary">
@@ -49,8 +66,6 @@
             <span class="heading-primary--sub">an aspiring iOS Developer based in Minsk, Belarus focused on SwiftUI & Combine. Open for internships and junior positions.</span>
         </h1>
     </div>
-
-</header>
 
 
 <main>

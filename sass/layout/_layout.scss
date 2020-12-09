@@ -1,37 +1,90 @@
-/* =================================
-  Top navigation
-==================================== */
-
-.top-nav {
-  // Layout
-  background-color: var(--color-secondary);
-  min-height: 7vh;
-  text-align: center;
-
-  // Style
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  ul {
-    list-style-type: none;
-  }
+.container {
+  display: grid;
+  grid-template-rows: 7vh 50vw;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
-@media (min-width: 700px) {
-  .top-nav {
+.top-nav {
+  background-color: var(--color-secondary);
+  grid-column: full-start / full-end;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__link-box {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
+    margin: 0 2rem;
+    li:not(:last-child) {
+      margin-right: 2rem;
+    }
 
-    &__link-box {
-      display: flex;
-
-      li {
-        margin-left: 2rem;
-      }
+    li:first-child {
+      margin-right: auto;
     }
   }
 }
+
+.header {
+  &__card {
+    grid-column: center-start / span 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text-box {
+    grid-column: 6 / center-end;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: var(--color-primary);
+    margin-right: 0.5rem;
+  }
+
+  &__icon-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.heading-primary {
+  &--main {
+    font-size: 3.2rem;
+    display: block;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 350;
+    font-family: var(--font-stack-secondary);
+  }
+}
+
+.heading-secondary {
+  &--main {
+    display: block;
+  }
+
+  &--sub {
+    display: block;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: lightgray;
+    text-align: center;
+  }
+}
+
+
+
+
