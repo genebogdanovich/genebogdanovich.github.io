@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-rows: 7vh 50vw;
+  grid-template-rows: 7vh 50vw min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
@@ -28,7 +28,10 @@
 }
 
 .header {
+
+  background-color: orangered;
   &__card {
+
     grid-column: center-start / span 4;
 
     display: flex;
@@ -85,6 +88,35 @@
   }
 }
 
+// Skills
+
+.skills {
+  grid-column: center-start / center-end;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+}
+
+.skill {
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+
+  &__icon {
+    fill: var(--color-primary);
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+  }
+
+  &__text {
+
+  }
+}
 
 
 

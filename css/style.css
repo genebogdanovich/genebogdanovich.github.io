@@ -18,6 +18,12 @@ body {
   font-size: 1.7rem; }
 
 /* =================================
+  Headings
+==================================== */
+.heading-3 {
+  font-size: 1.9rem; }
+
+/* =================================
   Top navigation
 ==================================== */
 .top-nav__link:link, .top-nav__link:visited {
@@ -41,7 +47,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 7vh 50vw;
+  grid-template-rows: 7vh 50vw min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .top-nav {
@@ -60,28 +66,27 @@ body {
     .top-nav__link-box li:first-child {
       margin-right: auto; }
 
-.header__card {
-  grid-column: center-start / span 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.header__text-box {
-  grid-column: 6 / center-end;
-  display: flex;
-  align-items: center; }
-
-.header__icon {
-  width: 3.2rem;
-  height: 3.2rem;
-  fill: var(--color-primary);
-  margin-right: 0.5rem; }
-
-.header__icon-container {
-  height: 100px;
-  display: flex;
-  justify-content: center; }
+.header {
+  background-color: orangered; }
+  .header__card {
+    grid-column: center-start / span 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .header__text-box {
+    grid-column: 6 / center-end;
+    display: flex;
+    align-items: center; }
+  .header__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: var(--color-primary);
+    margin-right: 0.5rem; }
+  .header__icon-container {
+    height: 100px;
+    display: flex;
+    justify-content: center; }
 
 .heading-primary--main {
   font-size: 3.2rem;
@@ -102,6 +107,24 @@ body {
   font-size: 1.6rem;
   color: lightgray;
   text-align: center; }
+
+.skills {
+  grid-column: center-start / center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start; }
+
+.skill {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem; }
+  .skill__icon {
+    fill: var(--color-primary);
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2; }
 
 .avatar {
   width: 20rem;
