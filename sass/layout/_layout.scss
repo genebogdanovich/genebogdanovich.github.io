@@ -28,8 +28,6 @@
 }
 
 .header {
-
-  background-color: orangered;
   &__card {
 
     grid-column: center-start / span 4;
@@ -47,8 +45,8 @@
   }
 
   &__icon {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 4.2rem;
+    height: 4.2rem;
     fill: var(--color-primary);
     margin-right: 0.5rem;
   }
@@ -83,7 +81,7 @@
     display: block;
     font-weight: 400;
     font-size: 1.6rem;
-    color: lightgray;
+    color: var(--color-gray-dark);
     text-align: center;
   }
 }
@@ -122,8 +120,8 @@
 
   &__icon {
     fill: var(--color-primary);
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4.7rem;
+    height: 4.7rem;
     grid-row: 1 / span 2;
   }
 
@@ -136,5 +134,74 @@
 
 
 
+// Projects
+.projects {
+  // Grid child
+  grid-column: full-start / full-end;
+  padding: 0 15rem 10rem 15rem;
 
 
+  &__project {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+
+
+  &__img {
+    // FIXME: This needs to be changed.
+    height: 50rem;
+  }
+
+  &__tags {
+    display: flex;
+    list-style: none;
+    margin: 1.5rem 0;
+    li:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+
+}
+
+/* =================================
+  Footer
+==================================== */
+
+.footer {
+  background-color: var(--color-secondary);
+  grid-column: full-start / full-end;
+  padding: 2rem;
+}
+
+.bottom-nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+
+  &__link:link,
+  &__link:visited {
+    font-size: 1.9rem;
+    color: var(--color-white);
+    text-decoration: none;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .2s;
+
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, .05);
+    transform: translateY(-3px);
+
+  }
+
+}
