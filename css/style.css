@@ -20,8 +20,13 @@ body {
 /* =================================
   Headings
 ==================================== */
+.heading-2 {
+  text-align: center;
+  font-size: 3.2rem;
+  padding: 3rem; }
+
 .heading-3 {
-  font-size: 1.9rem; }
+  font-size: 2rem; }
 
 /* =================================
   Top navigation
@@ -42,6 +47,9 @@ body {
 :root {
   --color-primary: #1b96f3;
   --color-secondary: #10133a;
+  --color-white: #fff;
+  --color-gray-light: #f5f5f5;
+  --color-gray-dark: #808080;
   --font-stack-primary: 'Source Sans Pro', sans-serif;
   --font-stack-secondary: 'Source Serif Pro', serif; }
 
@@ -109,11 +117,14 @@ body {
   text-align: center; }
 
 .skills {
-  grid-column: center-start / center-end;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem;
-  align-items: start; }
+  grid-column: full-start / full-end;
+  background-color: var(--color-gray-light);
+  padding: 0 15rem 10rem 15rem; }
+  .skills__grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start; }
 
 .skill {
   display: grid;
@@ -129,4 +140,5 @@ body {
 .avatar {
   width: 20rem;
   border-radius: 50%;
-  border: 1px solid var(--color-primary); }
+  border: 1px solid var(--color-primary);
+  display: block; }

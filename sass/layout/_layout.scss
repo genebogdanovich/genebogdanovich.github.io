@@ -91,12 +91,26 @@
 // Skills
 
 .skills {
-  grid-column: center-start / center-end;
+  // Grid child
+  grid-column: full-start / full-end;
+  background-color: var(--color-gray-light);
+  padding: 0 15rem 10rem 15rem;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem;
-  align-items: start;
+
+  &__grid-container {
+    // Grid parent
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+    align-items: start;
+
+
+  }
+
+
+
+
+
 }
 
 .skill {
@@ -117,6 +131,10 @@
 
   }
 }
+
+
+
+
 
 
 
