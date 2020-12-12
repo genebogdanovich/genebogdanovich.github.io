@@ -1,3 +1,7 @@
+/* =================================
+  Button
+==================================== */
+
 .btn:link,
 .btn:visited {
   text-decoration: none;
@@ -5,21 +9,6 @@
   color: var(--color-white);
   padding: 1rem 2rem;
   display: inline-flex;
-
-  transition: all .2s;
-
-}
-
-.btn:hover {
-  transform: translateY(-.3rem);
-  box-shadow: 0 1rem 2rem rgba(black, .2);
-
-
-}
-
-.btn:active {
-  transform: translateY(-.1rem);
-  box-shadow: 0 .5rem 1rem rgba(black, .2);
 }
 
 .btn__icon {
@@ -28,4 +17,3 @@
   fill: var(--color-white);
   margin-left: .5rem;
 }
-

@@ -1,0 +1,37 @@
+/* =================================
+  Button
+==================================== */
+
+.btn:link,
+.btn:visited {
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-.3rem);
+  box-shadow: 0 1rem 2rem rgba(black, .2);
+}
+
+.btn:active {
+  transform: translateY(-.1rem);
+  box-shadow: 0 .5rem 1rem rgba(black, .2);
+}
+
+
+/* =================================
+  Bottom navigation
+==================================== */
+
+.bottom-nav {
+  &__link:link,
+  &__link:visited {
+    transition: all .2s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    background-color: rgba(#fff, .05);
+    transform: translateY(-3px);
+  }
+}
+

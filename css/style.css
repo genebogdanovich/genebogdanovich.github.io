@@ -1,3 +1,6 @@
+/* =================================
+  Reset
+==================================== */
 *,
 *::after,
 *::before {
@@ -11,6 +14,34 @@ html {
 body {
   box-sizing: border-box; }
 
+/* =================================
+  Button
+==================================== */
+.btn:link,
+.btn:visited {
+  transition: all .2s; }
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+/* =================================
+  Bottom navigation
+==================================== */
+.bottom-nav__link:link, .bottom-nav__link:visited {
+  transition: all .2s; }
+
+.bottom-nav__link:hover, .bottom-nav__link:active {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px); }
+
+/* =================================
+  Body
+==================================== */
 body {
   font-family: var(--font-stack-primary);
   font-weight: 400;
@@ -29,7 +60,7 @@ body {
   font-size: 2.4rem; }
 
 /* =================================
-  Headings
+  Text styles
 ==================================== */
 .text {
   font-family: var(--font-stack-secondary); }
@@ -50,6 +81,9 @@ body {
 .header__icon-container {
   list-style: none; }
 
+/* =================================
+  Footer
+==================================== */
 .copyright {
   font-size: 1.5rem;
   color: var(--color-white);
@@ -67,11 +101,17 @@ body {
   --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   --font-stack-secondary: 'Source Serif Pro', serif; }
 
+/* =================================
+  Main grid
+==================================== */
 .container {
   display: grid;
   grid-template-rows: 7vh 50vw min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+/* =================================
+  Top navigation
+==================================== */
 .top-nav {
   background-color: var(--color-secondary);
   grid-column: full-start / full-end; }
@@ -88,6 +128,9 @@ body {
     .top-nav__link-box li:first-child {
       margin-right: auto; }
 
+/* =================================
+  Header
+==================================== */
 .header__card {
   grid-column: center-start / span 4;
   display: flex;
@@ -131,11 +174,14 @@ body {
   color: var(--color-gray-dark);
   text-align: center; }
 
+/* =================================
+  Skills
+==================================== */
 .skills {
   grid-column: full-start / full-end;
   background-color: var(--color-gray-light);
   padding: 0 15rem 10rem 15rem; }
-  .skills__grid-container {
+  .skills__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 6rem;
@@ -152,6 +198,9 @@ body {
     height: 4.7rem;
     grid-row: 1 / span 2; }
 
+/* =================================
+  Projects
+==================================== */
 .projects {
   grid-column: full-start / full-end;
   padding: 0 15rem 10rem 15rem; }
@@ -189,34 +238,27 @@ body {
     text-decoration: none;
     text-align: center;
     padding: 1.5rem;
-    display: block;
-    transition: all .2s; }
-  .bottom-nav__link:hover, .bottom-nav__link:active {
-    background-color: rgba(255, 255, 255, 0.05);
-    transform: translateY(-3px); }
+    display: block; }
 
+/* =================================
+  Avatar
+==================================== */
 .avatar {
   width: 20rem;
   border-radius: 50%;
   border: 1px solid var(--color-primary);
   display: block; }
 
+/* =================================
+  Button
+==================================== */
 .btn:link,
 .btn:visited {
   text-decoration: none;
   background-color: var(--color-secondary);
   color: var(--color-white);
   padding: 1rem 2rem;
-  display: inline-flex;
-  transition: all .2s; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  display: inline-flex; }
 
 .btn__icon {
   width: 3rem;
@@ -224,6 +266,9 @@ body {
   fill: var(--color-white);
   margin-left: .5rem; }
 
+/* =================================
+  Tag
+==================================== */
 .tag {
   background-color: var(--color-primary-opacity);
   color: var(--color-primary);
