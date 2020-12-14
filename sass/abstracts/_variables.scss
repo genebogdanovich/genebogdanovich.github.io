@@ -14,3 +14,9 @@
   --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   --font-stack-secondary: 'Source Serif Pro', serif;
 }
+
+// RESPONSIVE BREAKPOINTS
+// x / 16 = breakpoint size.
+$bp-large: 62.5em; // 1000px
+$bp-medium: 43.75em; // 700px
+$bp-small: 37.5em; // 600px

@@ -1,3 +1,5 @@
+@import "../abstracts/variables";
+
 /* =================================
   Reset
 ==================================== */
@@ -17,7 +19,13 @@ html {
   font-size: 62.5%;
   // This is 10px. Use rem units to set sizes. Example: 17px is 1.7rem.
   // We use this to define what one rem is.
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
+
+
 
 body {
   box-sizing: border-box;
