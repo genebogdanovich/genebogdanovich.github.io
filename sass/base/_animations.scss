@@ -1,4 +1,19 @@
 /* =================================
+  Top navigation
+==================================== */
+
+.top-nav {
+  &__link:link,
+  &__link:visited {
+    transition: all .2s;
+  }
+
+  &__link:hover {
+
+  }
+}
+
+/* =================================
   Button
 ==================================== */
 
@@ -34,4 +49,26 @@
     transform: translateY(-3px);
   }
 }
+
+/* =================================
+  Social icons
+==================================== */
+
+.header {
+  &__icon {
+    transition: all .2s;
+  }
+
+  &__icon:hover {
+    transform: translateY(-.3rem);
+  }
+
+  &__icon:active {
+    transform: translateY(-.1rem);
+  }
+}
+
+
+
+
 

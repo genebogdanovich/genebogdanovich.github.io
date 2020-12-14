@@ -41,7 +41,7 @@ body {
   &__link:link,
   &__link:visited {
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
   }
 
   &__link-box {

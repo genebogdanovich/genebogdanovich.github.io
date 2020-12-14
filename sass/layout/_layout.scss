@@ -60,6 +60,7 @@
     height: 4.2rem;
     fill: var(--color-primary);
     margin-right: 0.5rem;
+    transition: all .2s;
   }
 
   &__icon-container {
@@ -71,7 +72,7 @@
 
 .heading-primary {
   &--main {
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     display: block;
   }
 
@@ -91,7 +92,7 @@
   &--sub {
     display: block;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     color: var(--color-gray-dark);
     text-align: center;
   }

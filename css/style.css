@@ -15,6 +15,12 @@ body {
   box-sizing: border-box; }
 
 /* =================================
+  Top navigation
+==================================== */
+.top-nav__link:link, .top-nav__link:visited {
+  transition: all .2s; }
+
+/* =================================
   Button
 ==================================== */
 .btn:link,
@@ -38,6 +44,18 @@ body {
 .bottom-nav__link:hover, .bottom-nav__link:active {
   background-color: rgba(255, 255, 255, 0.05);
   transform: translateY(-3px); }
+
+/* =================================
+  Social icons
+==================================== */
+.header__icon {
+  transition: all .2s; }
+
+.header__icon:hover {
+  transform: translateY(-0.3rem); }
+
+.header__icon:active {
+  transform: translateY(-0.1rem); }
 
 /* =================================
   Body
@@ -70,7 +88,7 @@ body {
 ==================================== */
 .top-nav__link:link, .top-nav__link:visited {
   text-decoration: none;
-  color: white; }
+  color: var(--color-white); }
 
 .top-nav__link-box {
   list-style-type: none; }
@@ -97,6 +115,7 @@ body {
   --color-primary-opacity: rgba(27, 150, 243, .2);
   --color-white: #fff;
   --color-gray-light: #f5f5f5;
+  --color-gray-light-2: #d3d3d3;
   --color-gray-dark: #707070;
   --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   --font-stack-secondary: 'Source Serif Pro', serif; }
@@ -147,7 +166,8 @@ body {
   width: 4.2rem;
   height: 4.2rem;
   fill: var(--color-primary);
-  margin-right: 0.5rem; }
+  margin-right: 0.5rem;
+  transition: all .2s; }
 
 .header__icon-container {
   height: 100px;
@@ -155,7 +175,7 @@ body {
   justify-content: center; }
 
 .heading-primary--main {
-  font-size: 3.2rem;
+  font-size: 4.2rem;
   display: block; }
 
 .heading-primary--sub {
@@ -170,7 +190,7 @@ body {
 .heading-secondary--sub {
   display: block;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   color: var(--color-gray-dark);
   text-align: center; }
 
