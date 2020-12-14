@@ -1,9 +1,9 @@
 @import "../abstracts/variables";
 
 .padded-section {
-  padding: 0 15rem 10rem 15rem;
+  padding: 0 10rem 7rem 10rem;
 
-  @media only screen and (max-width: $bp-small) {
-    padding: 0 1rem 10rem 1rem;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 1rem 7rem 1rem;
   }
 }

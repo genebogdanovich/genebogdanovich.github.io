@@ -17,6 +17,6 @@
 
 // RESPONSIVE BREAKPOINTS
 // x / 16 = breakpoint size.
-$bp-large: 62.5em; // 1000px
-$bp-medium: 43.75em; // 700px
-$bp-small: 37.5em; // 600px
+$bp-large: 50em; // 800px smaller font
+$bp-medium: 43.75em; // 700px remove paddings
+$bp-small: 37.5em; // 600px collapse everything to one column

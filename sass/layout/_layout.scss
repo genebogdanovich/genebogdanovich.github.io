@@ -6,8 +6,8 @@
 
 .container {
   display: grid;
-  //grid-template-rows: 7vh minmax(min-content, 50vw) min-content;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: auto minmax(min-content, 50vw) min-content;
+  grid-template-columns: [full-start] repeat(8, 1fr) [full-end];
 }
 
 /* =================================
@@ -16,7 +16,7 @@
 
 .top-nav {
   background-color: var(--color-secondary);
-  grid-column: full-start / full-end;
+  grid-column: 1 / -1;
 }
 
 .top-nav {
@@ -36,6 +36,8 @@
       margin-right: auto;
     }
   }
+
+
 }
 
 /* =================================
@@ -44,30 +46,29 @@
 
 .header {
   &__card {
-    grid-column: center-start / span 4;
+    grid-column: full-start / span 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-small) {
       grid-column: full-start / full-end;
+      padding: 2rem;
     }
   }
 
   &__text-box {
-    grid-column: 6 / center-end;
+    grid-column: 5 / full-end;
     display: flex;
     align-items: center;
 
-    @media only screen and (max-width: $bp-medium) {
+    @media only screen and (max-width: $bp-small) {
       grid-column: full-start / full-end;
-      text-align: center;
-    }
-  }
+      text-align: left;
+      padding: 2rem;
 
-  &__item {
-    background-color: violet;
+    }
   }
 
   &__icon {
@@ -154,29 +155,44 @@
   // Grid child
   grid-column: full-start / full-end;
 
-  &__project {
-    display: flex;
-    width: 60%;
-    margin: 0 auto;
 
-    @media only screen and (max-width: $bp-medium) {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
+  &__project {
+    display: grid;
+    // Same 8 column pattern as with the overall website layout.
+    grid-template-columns: [full-start] repeat(8, 1fr) [full-end];
   }
 
   &__details {
-    @media only screen and (max-width: $bp-medium) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    grid-column: 2 / span 4;
+    align-self: center;
+    padding: 0 5rem;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: full-start / full-end;
+      padding: 2rem;
     }
+
   }
 
+  //&__details {
+  //  @media only screen and (max-width: $bp-medium) {
+  //    display: flex;
+  //    flex-direction: column;
+  //    align-items: center;
+  //    background-color: brown;
+  //  }
+  //}
+
   &__img {
+    grid-column: 6 / full-end;
     max-height: 50rem;
     max-width: 100%;
+    justify-self: left;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: full-start / full-end;
+      justify-self: center;
+    }
   }
 
   &__tags {
