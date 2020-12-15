@@ -159,12 +159,11 @@
 
   &__project {
     display: grid;
-    // Same 8 column pattern as with the overall website layout.
-    grid-template-columns: [full-start] repeat(8, 1fr) [full-end];
+    grid-template-columns: [full-start] repeat(10, 1fr) [full-end];
   }
 
   &__details {
-    grid-column: 2 / span 4;
+    grid-column: 3 / span 4;
     align-self: center;
     padding: 0 1.6rem;
 
@@ -176,7 +175,7 @@
   }
 
   &__img {
-    grid-column: 6 / full-end;
+    grid-column: 7 / full-end;
     max-height: 50rem;
     max-width: 100%;
     justify-self: left;

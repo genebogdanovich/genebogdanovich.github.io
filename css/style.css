@@ -1,7 +1,7 @@
 :root {
   --color-primary: #1b96f3;
   --color-secondary: #10133a;
-  --color-primary-transparent: rgba(27, 150, 243, .2);
+  --color-primary-transparent: rgba(27, 150, 243, .07);
   --color-white: #ffffff;
   --color-white-transparent: rgba(255, 255, 255, .8);
   --color-gray-light: #f5f5f5;
@@ -132,7 +132,7 @@ body {
 :root {
   --color-primary: #1b96f3;
   --color-secondary: #10133a;
-  --color-primary-transparent: rgba(27, 150, 243, .2);
+  --color-primary-transparent: rgba(27, 150, 243, .07);
   --color-white: #ffffff;
   --color-white-transparent: rgba(255, 255, 255, .8);
   --color-gray-light: #f5f5f5;
@@ -144,7 +144,7 @@ body {
 :root {
   --color-primary: #1b96f3;
   --color-secondary: #10133a;
-  --color-primary-transparent: rgba(27, 150, 243, .2);
+  --color-primary-transparent: rgba(27, 150, 243, .07);
   --color-white: #ffffff;
   --color-white-transparent: rgba(255, 255, 255, .8);
   --color-gray-light: #f5f5f5;
@@ -267,9 +267,9 @@ body {
   grid-column: full-start / full-end; }
   .projects__project {
     display: grid;
-    grid-template-columns: [full-start] repeat(8, 1fr) [full-end]; }
+    grid-template-columns: [full-start] repeat(10, 1fr) [full-end]; }
   .projects__details {
-    grid-column: 2 / span 4;
+    grid-column: 3 / span 4;
     align-self: center;
     padding: 0 1.6rem; }
     @media only screen and (max-width: 37.5em) {
@@ -277,7 +277,7 @@ body {
         grid-column: full-start / full-end;
         padding: 0 .8rem; } }
   .projects__img {
-    grid-column: 6 / full-end;
+    grid-column: 7 / full-end;
     max-height: 50rem;
     max-width: 100%;
     justify-self: left; }
@@ -355,7 +355,7 @@ body {
 :root {
   --color-primary: #1b96f3;
   --color-secondary: #10133a;
-  --color-primary-transparent: rgba(27, 150, 243, .2);
+  --color-primary-transparent: rgba(27, 150, 243, .07);
   --color-white: #ffffff;
   --color-white-transparent: rgba(255, 255, 255, .8);
   --color-gray-light: #f5f5f5;
