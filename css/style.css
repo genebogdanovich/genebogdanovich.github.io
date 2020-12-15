@@ -184,7 +184,7 @@ body {
   Header
 ==================================== */
 .header__card {
-  grid-column: full-start / span 4;
+  grid-column: 2 / span 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +195,7 @@ body {
       padding: 2rem; } }
 
 .header__text-box {
-  grid-column: 5 / full-end;
+  grid-column: 5 / 8;
   display: flex;
   align-items: center; }
   @media only screen and (max-width: 37.5em) {
