@@ -6,7 +6,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: auto minmax(min-content, 50vw) min-content;
+  grid-template-rows: minmax(5rem, 7vh) minmax(min-content, 50vw) min-content;
   grid-template-columns: [full-start] repeat(8, 1fr) [full-end];
 }
 
@@ -169,19 +169,10 @@
 
     @media only screen and (max-width: $bp-small) {
       grid-column: full-start / full-end;
-      padding: 2rem;
+      padding: 0 .8rem;
     }
 
   }
-
-  //&__details {
-  //  @media only screen and (max-width: $bp-medium) {
-  //    display: flex;
-  //    flex-direction: column;
-  //    align-items: center;
-  //    background-color: brown;
-  //  }
-  //}
 
   &__img {
     grid-column: 6 / full-end;
@@ -198,7 +189,8 @@
   &__tags {
     display: flex;
     list-style: none;
-    margin: 1.5rem 0;
+    margin: 1.6rem 0;
+    background-color: red;
 
     li:not(:last-child) {
       margin-right: 1rem;
