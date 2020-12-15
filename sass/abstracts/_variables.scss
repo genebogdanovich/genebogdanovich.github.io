@@ -3,9 +3,10 @@
   --color-primary: #1b96f3;
   --color-secondary: #10133a;
 
-  --color-primary-opacity: rgba(27, 150, 243, .2);
+  --color-primary-transparent: rgba(27, 150, 243, .2);
 
-  --color-white: #fff; // white
+  --color-white: #ffffff; // white
+  --color-white-transparent: rgba(255, 255, 255, .8);
   --color-gray-light: #f5f5f5; // whitesmoke
   --color-gray-light-2: #d3d3d3; // light gray
   --color-gray-dark: #707070;
@@ -17,6 +18,6 @@
 
 // RESPONSIVE BREAKPOINTS
 // x / 16 = breakpoint size.
-$bp-large: 50em; // 800px smaller font
+$bp-large: 55.62em; // 890px smaller font
 $bp-medium: 43.75em; // 700px remove paddings
 $bp-small: 37.5em; // 600px collapse everything to one column

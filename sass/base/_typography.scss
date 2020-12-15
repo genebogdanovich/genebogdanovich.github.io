@@ -41,7 +41,6 @@ body {
   &__link:link,
   &__link:visited {
     text-decoration: none;
-    color: var(--color-white);
   }
 
   &__link-box {
@@ -64,8 +63,8 @@ body {
 ==================================== */
 
 .copyright {
-  font-size: 1.5rem;
-  color: var(--color-white);
+  font-size: 1.6rem;
+  color: var(--color-white-transparent);
   margin: 3rem auto 0 auto;
   text-align: center;
   width: 70%;
