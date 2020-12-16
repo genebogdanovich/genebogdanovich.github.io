@@ -3,34 +3,79 @@
 ==================================== */
 
 body {
-  font-family: var(--font-stack-primary);
+  font-family: var(--font-stack);
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
+  color: var(--color-black);
 }
 
 /* =================================
   Headings
 ==================================== */
 
-.heading-1 {}
+.heading-1 {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 4.2rem;
+  color: var(--color-fullblack);
+}
 
 .heading-2 {
+  font-family: 'Proxima Nova Medium', sans-serif;
+  font-size: 3.6rem;
+  color: var(--color-darkblue);
   text-align: center;
-  font-size: 3.2rem;
-  padding: 3rem;
+  padding: 2.4rem 0;
+
+  &--serif {
+    font-family: 'Merriweather Light', serif;
+    color: var(--color-fullblack);
+    font-size: 2.4rem;
+
+
+  }
+
 }
 
+
+
 .heading-3 {
-  font-size: 2.4rem;
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-size: 2.7rem;
+  color: var(--color-fullblack);
 }
+
+.text {
+  // FIXME: Refactor this with inheritance.
+  font-family: var(--font-stack);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.7rem;
+  color: var(--color-black);
+}
+
+
 
 /* =================================
   Text styles
 ==================================== */
 
 .text {
-  font-family: var(--font-stack-secondary);
+  // FIXME: Refactor this with inheritance.
+  font-family: var(--font-stack);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.7rem;
+  color: var(--color-black);
+}
+
+.text-gray {
+  // FIXME: Refactor this with inheritance.
+  font-family: var(--font-stack);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.7rem;
+  color: var(--color-darkgray);
 }
 
 /* =================================
@@ -63,8 +108,9 @@ body {
 ==================================== */
 
 .copyright {
-  font-size: 1.6rem;
-  color: var(--color-white-transparent);
+  font-size: 1.4rem;
+  color: whitesmoke;
+
   margin: 3rem auto 0 auto;
   text-align: center;
   width: 70%;

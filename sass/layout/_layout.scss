@@ -15,7 +15,7 @@
 ==================================== */
 
 .top-nav {
-  background-color: var(--color-secondary);
+  background-color: var(--color-darkblue);
   grid-column: 1 / -1;
 }
 
@@ -72,9 +72,9 @@
   }
 
   &__icon {
-    width: 4.2rem;
-    height: 4.2rem;
-    fill: var(--color-primary);
+    width: 4rem;
+    height: 4rem;
+    fill: var(--color-blue);
     margin-right: 0.5rem;
     transition: all .2s;
   }
@@ -88,29 +88,28 @@
 
 .heading-primary {
   &--main {
-    font-size: 4.2rem;
+    // Hi, I'm Gene
     display: block;
   }
 
   &--sub {
+    // as aspiring iOS Dev based in Minsk
     display: block;
-    font-size: 2.4rem;
-    font-weight: 350;
-    font-family: var(--font-stack-secondary);
   }
 }
 
 .heading-secondary {
   &--main {
+    // Gene Bogdanovich
     display: block;
-    font-size: 2.4rem;
   }
 
   &--sub {
+    // Aspiring iOS Dev
     display: block;
-    font-weight: 400;
-    font-size: 1.9rem;
-    color: var(--color-gray-dark);
+    //font-weight: 400;
+    //font-size: 1.9rem;
+    //color: var(--color-darkgray);
     text-align: center;
   }
 }
@@ -122,7 +121,7 @@
 .skills {
   // Grid child
   grid-column: full-start / full-end;
-  background-color: var(--color-gray-light);
+  background-color: var(--color-whitesmoke);
 
   &__container {
     // Grid parent
@@ -141,7 +140,7 @@
   grid-column-gap: 2.5rem;
 
   &__icon {
-    fill: var(--color-primary);
+    fill: var(--color-blue);
     width: 4.7rem;
     height: 4.7rem;
     grid-row: 1 / span 2;
@@ -202,7 +201,7 @@
 ==================================== */
 
 .footer {
-  background-color: var(--color-secondary);
+  background-color: var(--color-darkblue);
   grid-column: full-start / full-end;
   padding: 2rem;
 }

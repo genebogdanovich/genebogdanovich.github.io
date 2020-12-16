@@ -1,23 +1,20 @@
 :root {
   // COLORS
-  --color-primary: #1b96f3;
-  --color-secondary: #10133a;
-
-  --color-primary-transparent: rgba(27, 150, 243, .07);
-
-  --color-white: #ffffff; // white
-  --color-white-transparent: rgba(255, 255, 255, .8);
-  --color-gray-light: #f5f5f5; // whitesmoke
-  --color-gray-light-2: #d3d3d3; // light gray
-  --color-gray-dark: #707070;
+  --color-blue: #1b96f3;
+  --color-darkblue: #10133a;
+  --color-blue-transparent: rgba(27, 150, 243, .07);
+  --color-white: #ffffff;
+  --color-whitesmoke: #f5f5f5;
+  --color-darkgray: #707070;
+  --color-black: #35393d;
+  --color-fullblack: #000000;
 
   // FONTS
-  --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  --font-stack-secondary: 'Source Serif Pro', serif;
+  --font-stack: proxima-nova, sans-serif;
 }
 
 // RESPONSIVE BREAKPOINTS
 // x / 16 = breakpoint size.
-$bp-large: 55.62em; // 890px smaller font
-$bp-medium: 43.75em; // 700px remove paddings
-$bp-small: 37.5em; // 600px collapse everything to one column
+$bp-large: 55.62em; // 890px smaller font.
+$bp-medium: 43.75em; // 700px remove paddings.
+$bp-small: 37.5em; // 600px collapse everything to one column.

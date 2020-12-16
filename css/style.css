@@ -1,14 +1,13 @@
 :root {
-  --color-primary: #1b96f3;
-  --color-secondary: #10133a;
-  --color-primary-transparent: rgba(27, 150, 243, .07);
+  --color-blue: #1b96f3;
+  --color-darkblue: #10133a;
+  --color-blue-transparent: rgba(27, 150, 243, .07);
   --color-white: #ffffff;
-  --color-white-transparent: rgba(255, 255, 255, .8);
-  --color-gray-light: #f5f5f5;
-  --color-gray-light-2: #d3d3d3;
-  --color-gray-dark: #707070;
-  --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  --font-stack-secondary: 'Source Serif Pro', serif; }
+  --color-whitesmoke: #f5f5f5;
+  --color-darkgray: #707070;
+  --color-black: #35393d;
+  --color-fullblack: #000000;
+  --font-stack: proxima-nova, sans-serif; }
 
 /* =================================
   Reset
@@ -20,9 +19,6 @@
   padding: 0;
   box-sizing: inherit; }
 
-a {
-  color: var(--color-white-transparent); }
-
 html {
   font-size: 62.5%; }
   @media only screen and (max-width: 55.62em) {
@@ -32,6 +28,12 @@ html {
 body {
   box-sizing: border-box; }
 
+h1 {
+  font-weight: inherit; }
+
+a {
+  color: var(--color-whitesmoke); }
+
 /* =================================
   Top navigation
 ==================================== */
@@ -39,7 +41,7 @@ body {
   transition: all .2s; }
 
 .top-nav__link:hover {
-  color: var(--color-white); }
+  color: var(--color-whitesmoke); }
 
 /* =================================
   Button
@@ -82,27 +84,59 @@ body {
   Body
 ==================================== */
 body {
-  font-family: var(--font-stack-primary);
+  font-family: var(--font-stack);
   font-weight: 400;
   line-height: 1.6;
-  font-size: 1.9rem; }
+  font-size: 1.7rem;
+  color: var(--color-black); }
 
 /* =================================
   Headings
 ==================================== */
+.heading-1 {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 4.2rem;
+  color: var(--color-fullblack); }
+
 .heading-2 {
+  font-family: 'Proxima Nova Medium', sans-serif;
+  font-size: 3.6rem;
+  color: var(--color-darkblue);
   text-align: center;
-  font-size: 3.2rem;
-  padding: 3rem; }
+  padding: 2.4rem 0; }
+  .heading-2--serif {
+    font-family: 'Merriweather Light', serif;
+    color: var(--color-fullblack);
+    font-size: 2.4rem; }
 
 .heading-3 {
-  font-size: 2.4rem; }
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-size: 2.7rem;
+  color: var(--color-fullblack); }
+
+.text {
+  font-family: var(--font-stack);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.7rem;
+  color: var(--color-black); }
 
 /* =================================
   Text styles
 ==================================== */
 .text {
-  font-family: var(--font-stack-secondary); }
+  font-family: var(--font-stack);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.7rem;
+  color: var(--color-black); }
+
+.text-gray {
+  font-family: var(--font-stack);
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.7rem;
+  color: var(--color-darkgray); }
 
 /* =================================
   Top navigation
@@ -123,35 +157,33 @@ body {
   Footer
 ==================================== */
 .copyright {
-  font-size: 1.6rem;
-  color: var(--color-white-transparent);
+  font-size: 1.4rem;
+  color: whitesmoke;
   margin: 3rem auto 0 auto;
   text-align: center;
   width: 70%; }
 
 :root {
-  --color-primary: #1b96f3;
-  --color-secondary: #10133a;
-  --color-primary-transparent: rgba(27, 150, 243, .07);
+  --color-blue: #1b96f3;
+  --color-darkblue: #10133a;
+  --color-blue-transparent: rgba(27, 150, 243, .07);
   --color-white: #ffffff;
-  --color-white-transparent: rgba(255, 255, 255, .8);
-  --color-gray-light: #f5f5f5;
-  --color-gray-light-2: #d3d3d3;
-  --color-gray-dark: #707070;
-  --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  --font-stack-secondary: 'Source Serif Pro', serif; }
+  --color-whitesmoke: #f5f5f5;
+  --color-darkgray: #707070;
+  --color-black: #35393d;
+  --color-fullblack: #000000;
+  --font-stack: proxima-nova, sans-serif; }
 
 :root {
-  --color-primary: #1b96f3;
-  --color-secondary: #10133a;
-  --color-primary-transparent: rgba(27, 150, 243, .07);
+  --color-blue: #1b96f3;
+  --color-darkblue: #10133a;
+  --color-blue-transparent: rgba(27, 150, 243, .07);
   --color-white: #ffffff;
-  --color-white-transparent: rgba(255, 255, 255, .8);
-  --color-gray-light: #f5f5f5;
-  --color-gray-light-2: #d3d3d3;
-  --color-gray-dark: #707070;
-  --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  --font-stack-secondary: 'Source Serif Pro', serif; }
+  --color-whitesmoke: #f5f5f5;
+  --color-darkgray: #707070;
+  --color-black: #35393d;
+  --color-fullblack: #000000;
+  --font-stack: proxima-nova, sans-serif; }
 
 /* =================================
   Main grid
@@ -165,7 +197,7 @@ body {
   Top navigation
 ==================================== */
 .top-nav {
-  background-color: var(--color-secondary);
+  background-color: var(--color-darkblue);
   grid-column: 1 / -1; }
 
 .top-nav {
@@ -205,9 +237,9 @@ body {
       padding: 2rem; } }
 
 .header__icon {
-  width: 4.2rem;
-  height: 4.2rem;
-  fill: var(--color-primary);
+  width: 4rem;
+  height: 4rem;
+  fill: var(--color-blue);
   margin-right: 0.5rem;
   transition: all .2s; }
 
@@ -217,24 +249,16 @@ body {
   justify-content: center; }
 
 .heading-primary--main {
-  font-size: 4.2rem;
   display: block; }
 
 .heading-primary--sub {
-  display: block;
-  font-size: 2.4rem;
-  font-weight: 350;
-  font-family: var(--font-stack-secondary); }
+  display: block; }
 
 .heading-secondary--main {
-  display: block;
-  font-size: 2.4rem; }
+  display: block; }
 
 .heading-secondary--sub {
   display: block;
-  font-weight: 400;
-  font-size: 1.9rem;
-  color: var(--color-gray-dark);
   text-align: center; }
 
 /* =================================
@@ -242,7 +266,7 @@ body {
 ==================================== */
 .skills {
   grid-column: full-start / full-end;
-  background-color: var(--color-gray-light); }
+  background-color: var(--color-whitesmoke); }
   .skills__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
@@ -255,7 +279,7 @@ body {
   grid-row-gap: 1.5rem;
   grid-column-gap: 2.5rem; }
   .skill__icon {
-    fill: var(--color-primary);
+    fill: var(--color-blue);
     width: 4.7rem;
     height: 4.7rem;
     grid-row: 1 / span 2; }
@@ -296,7 +320,7 @@ body {
   Footer
 ==================================== */
 .footer {
-  background-color: var(--color-secondary);
+  background-color: var(--color-darkblue);
   grid-column: full-start / full-end;
   padding: 2rem; }
 
@@ -322,7 +346,7 @@ body {
   max-height: 20rem;
   max-width: 100%;
   border-radius: 50%;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-blue);
   display: block; }
 
 /* =================================
@@ -331,7 +355,7 @@ body {
 .btn:link,
 .btn:visited {
   text-decoration: none;
-  background-color: var(--color-secondary);
+  background-color: var(--color-darkblue);
   color: var(--color-white);
   padding: 1rem 2rem;
   display: inline-flex; }
@@ -346,23 +370,22 @@ body {
   Tag
 ==================================== */
 .tag {
-  background-color: var(--color-primary-transparent);
-  color: var(--color-primary);
+  background-color: var(--color-blue-transparent);
+  color: var(--color-blue);
   padding: .5rem;
   border-radius: 2.4rem;
   font-size: 1.6rem; }
 
 :root {
-  --color-primary: #1b96f3;
-  --color-secondary: #10133a;
-  --color-primary-transparent: rgba(27, 150, 243, .07);
+  --color-blue: #1b96f3;
+  --color-darkblue: #10133a;
+  --color-blue-transparent: rgba(27, 150, 243, .07);
   --color-white: #ffffff;
-  --color-white-transparent: rgba(255, 255, 255, .8);
-  --color-gray-light: #f5f5f5;
-  --color-gray-light-2: #d3d3d3;
-  --color-gray-dark: #707070;
-  --font-stack-primary: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-  --font-stack-secondary: 'Source Serif Pro', serif; }
+  --color-whitesmoke: #f5f5f5;
+  --color-darkgray: #707070;
+  --color-black: #35393d;
+  --color-fullblack: #000000;
+  --font-stack: proxima-nova, sans-serif; }
 
 .padded-section {
   padding: 0 10rem 7rem 10rem; }
