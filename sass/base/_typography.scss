@@ -54,11 +54,22 @@ body {
   margin-bottom: 1rem;
 }
 
-.anchor {
-  font-size: 1.7rem;
+
+/* =================================
+  Anchor styles
+==================================== */
+
+.anchor:link,
+.anchor:visited {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.navigation-anchor:link,
+.navigation-anchor:visited {
   color: var(--color-white);
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
 }
 
 /* =================================
@@ -66,10 +77,10 @@ body {
 ==================================== */
 
 .top-nav {
-  &__link:link,
-  &__link:visited {
-    text-decoration: none;
-  }
+  //&__link:link,
+  //&__link:visited {
+  //  text-decoration: none;
+  //}
 
   &__link-box {
     list-style-type: none;

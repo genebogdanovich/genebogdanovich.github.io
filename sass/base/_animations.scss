@@ -9,7 +9,9 @@
   }
 
   &__link:hover {
-    color: var(--color-whitesmoke);
+
+    background-color: var(--color-white-transparent);
+
   }
 }
 
@@ -45,7 +47,7 @@
 
   &__link:hover,
   &__link:active {
-    background-color: rgba(#fff, .05);
+    background-color: var(--color-white-transparent);
     transform: translateY(-3px);
   }
 }

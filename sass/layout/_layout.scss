@@ -6,7 +6,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: minmax(5rem, 7vh) minmax(min-content, 50vw) min-content;
+  grid-template-rows: minmax(4.5rem, 6vh) minmax(min-content, 50vw) min-content;
   grid-template-columns: [full-start] repeat(8, 1fr) [full-end];
 }
 
@@ -15,8 +15,8 @@
 ==================================== */
 
 .top-nav {
-  background-color: var(--color-darkblue);
   grid-column: 1 / -1;
+  background-color: var(--color-darkblue);
 }
 
 .top-nav {
@@ -37,7 +37,10 @@
     }
   }
 
-
+  &__link {
+    padding: 1rem;
+    border-radius: 2rem;
+  }
 }
 
 /* =================================
