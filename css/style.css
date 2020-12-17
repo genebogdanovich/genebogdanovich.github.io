@@ -102,10 +102,10 @@ body {
   font-family: 'Proxima Nova Medium', sans-serif;
   font-size: 3.6rem;
   color: var(--color-darkblue);
-  text-align: center;
-  padding: 2.4rem 0; }
+  text-align: center; }
   .heading-2--serif {
-    font-family: 'Merriweather Light', serif;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
     color: var(--color-fullblack);
     font-size: 2.4rem; }
 
@@ -114,29 +114,16 @@ body {
   font-size: 2.7rem;
   color: var(--color-fullblack); }
 
-.text {
-  font-family: var(--font-stack);
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.7rem;
-  color: var(--color-black); }
-
 /* =================================
   Text styles
 ==================================== */
-.text {
-  font-family: var(--font-stack);
-  font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.7rem;
-  color: var(--color-black); }
-
 .text-gray {
   font-family: var(--font-stack);
   font-weight: 400;
   line-height: 1.6;
   font-size: 1.7rem;
-  color: var(--color-darkgray); }
+  color: var(--color-darkgray);
+  margin-bottom: 1rem; }
 
 /* =================================
   Top navigation
