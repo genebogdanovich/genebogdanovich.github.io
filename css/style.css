@@ -209,6 +209,11 @@ body {
       margin-right: 2rem; }
     .top-nav__link-box li:first-child {
       margin-right: auto; }
+    @media only screen and (max-width: 37.5em) {
+      .top-nav__link-box {
+        margin: 0 .5rem; }
+        .top-nav__link-box li:not(:last-child) {
+          margin-right: .5rem; } }
   .top-nav__link {
     padding: 1rem;
     border-radius: 2rem; }
@@ -308,7 +313,8 @@ body {
     @media only screen and (max-width: 37.5em) {
       .projects__img {
         grid-column: full-start / full-end;
-        justify-self: center; } }
+        justify-self: center;
+        margin: 2rem 0; } }
   .projects__tags {
     display: flex;
     list-style: none;

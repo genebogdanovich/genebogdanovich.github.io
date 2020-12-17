@@ -35,6 +35,17 @@
     li:first-child {
       margin-right: auto;
     }
+
+
+    @media only screen and (max-width: $bp-small) {
+      margin: 0 .5rem;
+
+      li:not(:last-child) {
+        margin-right: .5rem;
+      }
+    }
+
+
   }
 
   &__link {
@@ -185,6 +196,7 @@
     @media only screen and (max-width: $bp-small) {
       grid-column: full-start / full-end;
       justify-self: center;
+      margin: 2rem 0;
     }
   }
 
