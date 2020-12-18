@@ -1,14 +1,14 @@
 :root {
-  --color-blue: #1b96f3;
-  --color-darkblue: #10133a;
-  --color-blue-transparent: rgba(27, 150, 243, .1);
-  --color-white: #ffffff;
-  --color-white-transparent: rgba(255, 255, 255, .1);
-  --color-whitesmoke: #f5f5f5;
-  --color-darkgray: #707070;
-  --color-lightgray: #e8e8e8;
-  --color-black: #35393d;
   --color-fullblack: #000000;
+  --color-darkblue: #10133a;
+  --color-black: #35393d;
+  --color-darkgray: #707070;
+  --color-blue: #1b96f3;
+  --color-lightgray: #e8e8e8;
+  --color-whitesmoke: #f5f5f5;
+  --color-fullwhite: #ffffff;
+  --color-blue-transparent: rgba(27, 150, 243, .1);
+  --color-fullwhite-transparent: rgba(255, 255, 255, .1);
   --font-stack: proxima-nova, sans-serif; }
 
 /* =================================
@@ -30,6 +30,12 @@ html {
 body {
   box-sizing: border-box; }
 
+ul, ol {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 /* =================================
   Top navigation
 ==================================== */
@@ -37,7 +43,8 @@ body {
   transition: all .2s; }
 
 .top-nav__link:hover {
-  background-color: var(--color-white-transparent); }
+  background-color: var(--color-fullwhite-transparent);
+  color: var(--color-fullwhite); }
 
 /* =================================
   Button
@@ -55,16 +62,6 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 /* =================================
-  Bottom navigation
-==================================== */
-.bottom-nav__link:link, .bottom-nav__link:visited {
-  transition: all .2s; }
-
-.bottom-nav__link:hover, .bottom-nav__link:active {
-  background-color: var(--color-white-transparent);
-  transform: translateY(-3px); }
-
-/* =================================
   Social icons
 ==================================== */
 .header__icon {
@@ -77,110 +74,102 @@ body {
   transform: translateY(-0.1rem); }
 
 /* =================================
+  Bottom navigation
+==================================== */
+.bottom-nav__link:link, .bottom-nav__link:visited {
+  transition: all .2s; }
+
+.bottom-nav__link:hover, .bottom-nav__link:active {
+  background-color: var(--color-fullwhite-transparent);
+  transform: translateY(-3px); }
+
+b {
+  font-weight: 900; }
+
+/* =================================
   Body
 ==================================== */
 body {
   font-family: var(--font-stack);
-  font-weight: 400;
-  line-height: 1.6;
   font-size: 1.7rem;
-  color: var(--color-black); }
+  color: var(--color-black);
+  line-height: 1.6;
+  font-weight: 400; }
 
 /* =================================
   Headings
 ==================================== */
-.heading-1 {
-  font-family: 'Proxima Nova Bold', sans-serif;
-  font-size: 4.2rem;
+.heading-3 {
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-size: 2.7rem;
   color: var(--color-fullblack); }
 
 .heading-2 {
   font-family: 'Proxima Nova Medium', sans-serif;
   font-size: 3.6rem;
-  color: var(--color-darkblue);
-  text-align: center; }
-  .heading-2--serif {
-    font-family: 'Merriweather', serif;
-    font-weight: lighter;
-    color: var(--color-fullblack);
-    font-size: 2.4rem; }
+  color: var(--color-darkblue); }
+  .heading-2--secondary {
+    font-family: 'Merriweather Light', serif;
+    font-weight: 300;
+    font-size: 2.4rem;
+    color: var(--color-fullblack); }
 
-.heading-3 {
-  font-family: 'Proxima Nova Light', sans-serif;
-  font-size: 2.7rem;
+.heading-1 {
+  font-family: 'Proxima Nova Medium', sans-serif;
+  font-size: 4.2rem;
   color: var(--color-fullblack); }
 
 /* =================================
   Text styles
 ==================================== */
 .text-gray {
-  font-family: var(--font-stack);
-  font-weight: 400;
-  line-height: 1.6;
   font-size: 1.7rem;
-  color: var(--color-darkgray);
-  margin-bottom: 1rem; }
+  font-weight: 400;
+  color: var(--color-darkgray); }
+
+.copyright {
+  font-size: 1.4rem;
+  color: var(--color-lightgray); }
 
 /* =================================
   Anchor styles
 ==================================== */
-.anchor:link,
-.anchor:visited {
-  color: var(--color-blue);
-  text-decoration: underline; }
-
-.navigation-anchor:link,
-.navigation-anchor:visited {
-  color: var(--color-white);
-  text-align: center;
-  text-decoration: none; }
+.anchor {
+  color: var(--color-blue); }
+  .anchor--navigation {
+    color: var(--color-lightgray);
+    text-align: center; }
 
 /* =================================
-  Top navigation
+  Atomic components
 ==================================== */
-.top-nav__link-box {
-  list-style-type: none; }
-
-/* =================================
-  Header
-==================================== */
-.header__icon-container {
-  list-style: none; }
-
-/* =================================
-  Footer
-==================================== */
-.copyright {
-  font-size: 1.4rem;
-  color: whitesmoke;
-  margin: 3rem auto 0 auto;
-  text-align: center;
-  width: 70%; }
+.centered-text {
+  text-align: center; }
 
 :root {
-  --color-blue: #1b96f3;
-  --color-darkblue: #10133a;
-  --color-blue-transparent: rgba(27, 150, 243, .1);
-  --color-white: #ffffff;
-  --color-white-transparent: rgba(255, 255, 255, .1);
-  --color-whitesmoke: #f5f5f5;
-  --color-darkgray: #707070;
-  --color-lightgray: #e8e8e8;
-  --color-black: #35393d;
   --color-fullblack: #000000;
+  --color-darkblue: #10133a;
+  --color-black: #35393d;
+  --color-darkgray: #707070;
+  --color-blue: #1b96f3;
+  --color-lightgray: #e8e8e8;
+  --color-whitesmoke: #f5f5f5;
+  --color-fullwhite: #ffffff;
+  --color-blue-transparent: rgba(27, 150, 243, .1);
+  --color-fullwhite-transparent: rgba(255, 255, 255, .1);
   --font-stack: proxima-nova, sans-serif; }
 
 :root {
-  --color-blue: #1b96f3;
-  --color-darkblue: #10133a;
-  --color-blue-transparent: rgba(27, 150, 243, .1);
-  --color-white: #ffffff;
-  --color-white-transparent: rgba(255, 255, 255, .1);
-  --color-whitesmoke: #f5f5f5;
-  --color-darkgray: #707070;
-  --color-lightgray: #e8e8e8;
-  --color-black: #35393d;
   --color-fullblack: #000000;
+  --color-darkblue: #10133a;
+  --color-black: #35393d;
+  --color-darkgray: #707070;
+  --color-blue: #1b96f3;
+  --color-lightgray: #e8e8e8;
+  --color-whitesmoke: #f5f5f5;
+  --color-fullwhite: #ffffff;
+  --color-blue-transparent: rgba(27, 150, 243, .1);
+  --color-fullwhite-transparent: rgba(255, 255, 255, .1);
   --font-stack: proxima-nova, sans-serif; }
 
 /* =================================
@@ -188,7 +177,7 @@ body {
 ==================================== */
 .container {
   display: grid;
-  grid-template-rows: minmax(4.5rem, 6vh) minmax(min-content, 50vw) min-content;
+  grid-template-rows: minmax(4.5rem, 6vh) minmax(min-content, 50vw);
   grid-template-columns: [full-start] repeat(8, 1fr) [full-end]; }
 
 /* =================================
@@ -213,9 +202,11 @@ body {
       .top-nav__link-box {
         margin: 0 .5rem; }
         .top-nav__link-box li:not(:last-child) {
-          margin-right: .5rem; } }
+          margin-right: .5rem; }
+        .top-nav__link-box li:first-child {
+          margin-right: auto; } }
   .top-nav__link {
-    padding: 1rem;
+    padding: .75rem;
     border-radius: 2rem; }
 
 /* =================================
@@ -246,8 +237,7 @@ body {
   width: 4rem;
   height: 4rem;
   fill: var(--color-blue);
-  margin-right: 0.5rem;
-  transition: all .2s; }
+  margin-right: 0.5rem; }
 
 .header__icon-container {
   display: flex;
@@ -266,8 +256,11 @@ body {
   display: block;
   text-align: center; }
 
+.text-gray {
+  margin-bottom: 1rem; }
+
 /* =================================
-  Skills
+  Skills section
 ==================================== */
 .skills {
   grid-column: full-start / full-end;
@@ -290,7 +283,7 @@ body {
     grid-row: 1 / span 2; }
 
 /* =================================
-  Projects
+  Projects section
 ==================================== */
 .projects {
   grid-column: full-start / full-end; }
@@ -323,6 +316,12 @@ body {
       margin-right: 1rem; }
 
 /* =================================
+  Sections
+==================================== */
+.heading-2 {
+  padding: 2rem 0; }
+
+/* =================================
   Footer
 ==================================== */
 .footer {
@@ -331,16 +330,20 @@ body {
   padding: 2rem; }
 
 .bottom-nav {
-  border-bottom: 0.1rem solid var(--color-white-transparent);
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
   grid-gap: 2rem;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  border-bottom: 0.1rem solid var(--color-fullwhite-transparent); }
   .bottom-nav__link:link, .bottom-nav__link:visited {
     padding: 1.5rem;
     display: block; }
+
+.copyright {
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  width: 70%; }
 
 /* =================================
   Avatar
@@ -359,14 +362,13 @@ body {
 .btn:visited {
   text-decoration: none;
   background-color: var(--color-darkblue);
-  color: var(--color-white);
   padding: 1rem 2rem;
   display: inline-flex; }
 
 .btn__icon {
   width: 3rem;
   height: 3rem;
-  fill: var(--color-white);
+  fill: var(--color-fullwhite);
   margin-left: .5rem; }
 
 /* =================================
@@ -380,16 +382,16 @@ body {
   font-size: 1.6rem; }
 
 :root {
-  --color-blue: #1b96f3;
-  --color-darkblue: #10133a;
-  --color-blue-transparent: rgba(27, 150, 243, .1);
-  --color-white: #ffffff;
-  --color-white-transparent: rgba(255, 255, 255, .1);
-  --color-whitesmoke: #f5f5f5;
-  --color-darkgray: #707070;
-  --color-lightgray: #e8e8e8;
-  --color-black: #35393d;
   --color-fullblack: #000000;
+  --color-darkblue: #10133a;
+  --color-black: #35393d;
+  --color-darkgray: #707070;
+  --color-blue: #1b96f3;
+  --color-lightgray: #e8e8e8;
+  --color-whitesmoke: #f5f5f5;
+  --color-fullwhite: #ffffff;
+  --color-blue-transparent: rgba(27, 150, 243, .1);
+  --color-fullwhite-transparent: rgba(255, 255, 255, .1);
   --font-stack: proxima-nova, sans-serif; }
 
 .padded-section {

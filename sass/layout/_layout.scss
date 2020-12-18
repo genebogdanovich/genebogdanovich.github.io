@@ -6,7 +6,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: minmax(4.5rem, 6vh) minmax(min-content, 50vw) min-content;
+  grid-template-rows: minmax(4.5rem, 6vh) minmax(min-content, 50vw);
   grid-template-columns: [full-start] repeat(8, 1fr) [full-end];
 }
 
@@ -36,20 +36,23 @@
       margin-right: auto;
     }
 
-
+    // On mobile screens reduce margins.
     @media only screen and (max-width: $bp-small) {
       margin: 0 .5rem;
 
       li:not(:last-child) {
         margin-right: .5rem;
       }
+
+      li:first-child {
+        margin-right: auto;
+      }
     }
-
-
   }
 
   &__link {
-    padding: 1rem;
+    // This is so that we can have hover effect.
+    padding: .75rem;
     border-radius: 2rem;
   }
 }
@@ -81,7 +84,6 @@
       grid-column: full-start / full-end;
       text-align: left;
       padding: 2rem;
-
     }
   }
 
@@ -90,7 +92,6 @@
     height: 4rem;
     fill: var(--color-blue);
     margin-right: 0.5rem;
-    transition: all .2s;
   }
 
   &__icon-container {
@@ -106,7 +107,7 @@
   }
 
   &--sub {
-    // as aspiring iOS Dev based in Minsk
+    // as aspiring iOS Dev based in Minsk, Belarus
     display: block;
   }
 }
@@ -118,29 +119,28 @@
   }
 
   &--sub {
-    // Aspiring iOS Dev
+    // Aspiring iOS Developer
     display: block;
-    //font-weight: 400;
-    //font-size: 1.9rem;
-    //color: var(--color-darkgray);
     text-align: center;
   }
 }
 
+.text-gray {
+  margin-bottom: 1rem;
+}
+
 /* =================================
-  Skills
+  Skills section
 ==================================== */
 
-
 .skills {
-  // Grid child
+  // Grid child properties
   grid-column: full-start / full-end;
   background-color: var(--color-whitesmoke);
 
   &__container {
-    // Grid parent
+    // Grid parent properties
     display: grid;
-    // TODO: Calibrate padded-section and skills grid.
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-gap: 6rem;
     align-items: start;
@@ -159,16 +159,16 @@
     height: 4.7rem;
     grid-row: 1 / span 2;
   }
+
 }
 
 /* =================================
-  Projects
+  Projects section
 ==================================== */
 
 .projects {
-  // Grid child
+  // Grid child properties
   grid-column: full-start / full-end;
-
 
   &__project {
     display: grid;
@@ -184,7 +184,6 @@
       grid-column: full-start / full-end;
       padding: 0 .8rem;
     }
-
   }
 
   &__img {
@@ -212,6 +211,14 @@
 }
 
 /* =================================
+  Sections
+==================================== */
+
+.heading-2 {
+  padding: 2rem 0;
+}
+
+/* =================================
   Footer
 ==================================== */
 
@@ -222,18 +229,23 @@
 }
 
 .bottom-nav {
-  border-bottom: .1rem solid var(--color-white-transparent);
-  list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, max-content));
   grid-gap: 2rem;
   align-items: center;
   justify-content: center;
 
+  border-bottom: .1rem solid var(--color-fullwhite-transparent);
+
   &__link:link,
   &__link:visited {
-
     padding: 1.5rem;
     display: block;
   }
+}
+
+.copyright {
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  width: 70%;
 }

@@ -9,9 +9,8 @@
   }
 
   &__link:hover {
-
-    background-color: var(--color-white-transparent);
-
+    background-color: var(--color-fullwhite-transparent);
+    color: var(--color-fullwhite);
   }
 }
 
@@ -34,24 +33,6 @@
   box-shadow: 0 .5rem 1rem rgba(black, .2);
 }
 
-
-/* =================================
-  Bottom navigation
-==================================== */
-
-.bottom-nav {
-  &__link:link,
-  &__link:visited {
-    transition: all .2s;
-  }
-
-  &__link:hover,
-  &__link:active {
-    background-color: var(--color-white-transparent);
-    transform: translateY(-3px);
-  }
-}
-
 /* =================================
   Social icons
 ==================================== */
@@ -70,7 +51,19 @@
   }
 }
 
+/* =================================
+  Bottom navigation
+==================================== */
 
+.bottom-nav {
+  &__link:link,
+  &__link:visited {
+    transition: all .2s;
+  }
 
-
-
+  &__link:hover,
+  &__link:active {
+    background-color: var(--color-fullwhite-transparent);
+    transform: translateY(-3px);
+  }
+}

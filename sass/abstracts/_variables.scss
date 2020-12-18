@@ -1,22 +1,24 @@
 :root {
   // COLORS
-  --color-blue: #1b96f3;
-  --color-darkblue: #10133a;
-  --color-blue-transparent: rgba(27, 150, 243, .1);
-  --color-white: #ffffff;
-  --color-white-transparent: rgba(255, 255, 255, .1);
-  --color-whitesmoke: #f5f5f5;
-  --color-darkgray: #707070;
-  --color-lightgray: #e8e8e8;
-  --color-black: #35393d;
   --color-fullblack: #000000;
+  --color-darkblue: #10133a;
+  --color-black: #35393d;
+  --color-darkgray: #707070;
+  --color-blue: #1b96f3;
+  --color-lightgray: #e8e8e8;
+  --color-whitesmoke: #f5f5f5;
+  --color-fullwhite: #ffffff;
+  --color-blue-transparent: rgba(27, 150, 243, .1);
+  --color-fullwhite-transparent: rgba(255, 255, 255, .1);
 
   // FONTS
   --font-stack: proxima-nova, sans-serif;
 }
 
 // RESPONSIVE BREAKPOINTS
+
 // x / 16 = breakpoint size.
+
 $bp-large: 55.62em; // 890px smaller font.
 $bp-medium: 43.75em; // 700px remove paddings.
 $bp-small: 37.5em; // 600px collapse everything to one column.

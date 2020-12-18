@@ -1,22 +1,26 @@
+b {
+  font-weight: 900;
+}
+
 /* =================================
   Body
 ==================================== */
 
 body {
   font-family: var(--font-stack);
-  font-weight: 400;
-  line-height: 1.6;
   font-size: 1.7rem;
   color: var(--color-black);
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 /* =================================
   Headings
 ==================================== */
 
-.heading-1 {
-  font-family: 'Proxima Nova Bold', sans-serif;
-  font-size: 4.2rem;
+.heading-3 {
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-size: 2.7rem;
   color: var(--color-fullblack);
 }
 
@@ -24,19 +28,18 @@ body {
   font-family: 'Proxima Nova Medium', sans-serif;
   font-size: 3.6rem;
   color: var(--color-darkblue);
-  text-align: center;
 
-  &--serif {
-    font-family: 'Merriweather', serif;
-    font-weight: lighter;
-    color: var(--color-fullblack);
+  &--secondary {
+    font-family: 'Merriweather Light', serif;
+    font-weight: 300;
     font-size: 2.4rem;
+    color: var(--color-fullblack);
   }
 }
 
-.heading-3 {
-  font-family: 'Proxima Nova Light', sans-serif;
-  font-size: 2.7rem;
+.heading-1 {
+  font-family: 'Proxima Nova Medium', sans-serif;
+  font-size: 4.2rem;
   color: var(--color-fullblack);
 }
 
@@ -45,67 +48,33 @@ body {
 ==================================== */
 
 .text-gray {
-  // FIXME: Refactor this.
-  font-family: var(--font-stack);
-  font-weight: 400;
-  line-height: 1.6;
   font-size: 1.7rem;
+  font-weight: 400;
   color: var(--color-darkgray);
-  margin-bottom: 1rem;
 }
 
+.copyright {
+  font-size: 1.4rem;
+  color: var(--color-lightgray);
+}
 
 /* =================================
   Anchor styles
 ==================================== */
 
-.anchor:link,
-.anchor:visited {
+// FIXME: What about visited and link classes?
+.anchor {
   color: var(--color-blue);
-  text-decoration: underline;
-}
-
-.navigation-anchor:link,
-.navigation-anchor:visited {
-  color: var(--color-white);
-  text-align: center;
-  text-decoration: none;
-}
-
-/* =================================
-  Top navigation
-==================================== */
-
-.top-nav {
-  //&__link:link,
-  //&__link:visited {
-  //  text-decoration: none;
-  //}
-
-  &__link-box {
-    list-style-type: none;
+  &--navigation {
+    color: var(--color-lightgray);
+    text-align: center;
   }
 }
 
 /* =================================
-  Header
+  Atomic components
 ==================================== */
 
-.header {
-  &__icon-container {
-    list-style: none;
-  }
-}
-
-/* =================================
-  Footer
-==================================== */
-
-.copyright {
-  font-size: 1.4rem;
-  color: whitesmoke;
-
-  margin: 3rem auto 0 auto;
+.centered-text {
   text-align: center;
-  width: 70%;
 }
