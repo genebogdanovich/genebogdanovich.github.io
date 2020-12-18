@@ -109,7 +109,7 @@ body {
   font-size: 3.6rem;
   color: var(--color-darkblue); }
   .heading-2--secondary {
-    font-family: 'Merriweather Light', serif;
+    font-family: 'Merriweather', serif;
     font-weight: 300;
     font-size: 2.4rem;
     color: var(--color-fullblack); }
