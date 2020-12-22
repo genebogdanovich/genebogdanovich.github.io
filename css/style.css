@@ -140,6 +140,9 @@ body {
   .anchor--navigation {
     color: var(--color-lightgray);
     text-align: center; }
+    .anchor--navigation--bold {
+      color: var(--color-lightgray);
+      font-weight: 600; }
 
 /* =================================
   Atomic components
