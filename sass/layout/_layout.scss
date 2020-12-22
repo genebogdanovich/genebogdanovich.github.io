@@ -6,7 +6,7 @@
 
 .container {
   display: grid;
-  grid-template-rows: minmax(4.5rem, 6vh) minmax(min-content, 50vw);
+  grid-template-rows: minmax(min-content, 50vw);
   grid-template-columns: [full-start] repeat(8, 1fr) [full-end];
 }
 
@@ -15,8 +15,7 @@
 ==================================== */
 
 .top-nav {
-  grid-column: 1 / -1;
-  background-color: var(--color-darkblue);
+  background-color: var(--color-darkblue-transparent);
   box-shadow: 0 1rem 2rem rgba(black, .2);
 }
 
@@ -24,6 +23,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 4.5rem;
+  max-height: 6vh;
 
   &__link-box {
     display: flex;
@@ -58,12 +59,21 @@
   }
 }
 
+// Sticky navigation
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /* =================================
   Header
 ==================================== */
 
 .header {
   &__card {
+    margin-top: 6rem;
     grid-column: 2 / span 3;
     display: flex;
     flex-direction: column;
@@ -77,6 +87,7 @@
   }
 
   &__text-box {
+    margin-top: 6rem;
     grid-column: 5 / 8;
     display: flex;
     align-items: center;
@@ -85,6 +96,7 @@
       grid-column: full-start / full-end;
       text-align: left;
       padding: 2rem;
+      margin-top: 0;
     }
   }
 
@@ -170,6 +182,7 @@
 .projects {
   // Grid child properties
   grid-column: full-start / full-end;
+  padding-top: 2rem;
 
   &__project {
     display: grid;

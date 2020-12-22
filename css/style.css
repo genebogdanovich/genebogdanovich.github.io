@@ -1,6 +1,7 @@
 :root {
   --color-fullblack: #000000;
   --color-darkblue: #10133a;
+  --color-darkblue-transparent: rgba(16, 19, 58, .95);
   --color-black: #35393d;
   --color-darkgray: #707070;
   --color-blue: #1b96f3;
@@ -149,6 +150,7 @@ body {
 :root {
   --color-fullblack: #000000;
   --color-darkblue: #10133a;
+  --color-darkblue-transparent: rgba(16, 19, 58, .95);
   --color-black: #35393d;
   --color-darkgray: #707070;
   --color-blue: #1b96f3;
@@ -162,6 +164,7 @@ body {
 :root {
   --color-fullblack: #000000;
   --color-darkblue: #10133a;
+  --color-darkblue-transparent: rgba(16, 19, 58, .95);
   --color-black: #35393d;
   --color-darkgray: #707070;
   --color-blue: #1b96f3;
@@ -177,21 +180,22 @@ body {
 ==================================== */
 .container {
   display: grid;
-  grid-template-rows: minmax(4.5rem, 6vh) minmax(min-content, 50vw);
+  grid-template-rows: minmax(min-content, 50vw);
   grid-template-columns: [full-start] repeat(8, 1fr) [full-end]; }
 
 /* =================================
   Top navigation
 ==================================== */
 .top-nav {
-  grid-column: 1 / -1;
-  background-color: var(--color-darkblue);
+  background-color: var(--color-darkblue-transparent);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .top-nav {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 4.5rem;
+  max-height: 6vh; }
   .top-nav__link-box {
     display: flex;
     margin: 0 2rem; }
@@ -210,10 +214,16 @@ body {
     padding: .75rem;
     border-radius: 2rem; }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
 /* =================================
   Header
 ==================================== */
 .header__card {
+  margin-top: 6rem;
   grid-column: 2 / span 3;
   display: flex;
   flex-direction: column;
@@ -225,6 +235,7 @@ body {
       padding: 2rem; } }
 
 .header__text-box {
+  margin-top: 6rem;
   grid-column: 5 / 8;
   display: flex;
   align-items: center; }
@@ -232,7 +243,8 @@ body {
     .header__text-box {
       grid-column: full-start / full-end;
       text-align: left;
-      padding: 2rem; } }
+      padding: 2rem;
+      margin-top: 0; } }
 
 .header__icon {
   width: 4rem;
@@ -287,7 +299,8 @@ body {
   Projects section
 ==================================== */
 .projects {
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding-top: 2rem; }
   .projects__project {
     display: grid;
     grid-template-columns: [full-start] repeat(10, 1fr) [full-end]; }
@@ -385,6 +398,7 @@ body {
 :root {
   --color-fullblack: #000000;
   --color-darkblue: #10133a;
+  --color-darkblue-transparent: rgba(16, 19, 58, .95);
   --color-black: #35393d;
   --color-darkgray: #707070;
   --color-blue: #1b96f3;
@@ -396,7 +410,7 @@ body {
   --font-stack: proxima-nova, sans-serif; }
 
 .padded-section {
-  padding: 0 10rem 7rem 10rem; }
+  padding: 2rem 10rem 7rem 10rem; }
   @media only screen and (max-width: 43.75em) {
     .padded-section {
-      padding: 0 1rem 7rem 1rem; } }
+      padding: 2rem 1rem 7rem 1rem; } }
