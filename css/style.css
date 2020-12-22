@@ -185,7 +185,8 @@ body {
 ==================================== */
 .top-nav {
   grid-column: 1 / -1;
-  background-color: var(--color-darkblue); }
+  background-color: var(--color-darkblue);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .top-nav {
   display: flex;
