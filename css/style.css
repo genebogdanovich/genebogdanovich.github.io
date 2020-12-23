@@ -220,7 +220,18 @@ body {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
+
+.the-blur {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 4.5rem;
+  max-height: 6vh;
+  background: rgba(0, 0, 0, 0.4);
+  filter: blur(0.1rem);
+  z-index: -1; }
 
 /* =================================
   Header
