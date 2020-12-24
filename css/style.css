@@ -130,7 +130,8 @@ body {
 
 .copyright {
   font-size: 1.4rem;
-  color: var(--color-lightgray); }
+  color: var(--color-lightgray);
+  opacity: .8; }
 
 /* =================================
   Anchor styles
