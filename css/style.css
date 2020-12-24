@@ -1,5 +1,5 @@
 :root {
-  --color-fullblack: #000000;
+  --color-darkblack: #1f1f1f;
   --color-darkblue: #10133a;
   --color-darkblue-transparent: rgba(16, 19, 58, .95);
   --color-black: #35393d;
@@ -103,7 +103,7 @@ body {
 .heading-3 {
   font-family: 'Proxima Nova Light', sans-serif;
   font-size: 2.7rem;
-  color: var(--color-fullblack); }
+  color: var(--color-darkblack); }
 
 .heading-2 {
   font-family: 'Proxima Nova Medium', sans-serif;
@@ -113,12 +113,12 @@ body {
     font-family: 'Merriweather', serif;
     font-weight: 300;
     font-size: 2.4rem;
-    color: var(--color-fullblack); }
+    color: var(--color-darkblack); }
 
 .heading-1 {
   font-family: 'Proxima Nova Medium', sans-serif;
   font-size: 4.2rem;
-  color: var(--color-fullblack); }
+  color: var(--color-darkblack); }
 
 /* =================================
   Text styles
@@ -151,7 +151,7 @@ body {
   text-align: center; }
 
 :root {
-  --color-fullblack: #000000;
+  --color-darkblack: #1f1f1f;
   --color-darkblue: #10133a;
   --color-darkblue-transparent: rgba(16, 19, 58, .95);
   --color-black: #35393d;
@@ -165,7 +165,7 @@ body {
   --font-stack: proxima-nova, sans-serif; }
 
 :root {
-  --color-fullblack: #000000;
+  --color-darkblack: #1f1f1f;
   --color-darkblue: #10133a;
   --color-darkblue-transparent: rgba(16, 19, 58, .95);
   --color-black: #35393d;
@@ -229,7 +229,7 @@ body {
   width: 100%;
   min-height: 4.5rem;
   max-height: 6vh;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   filter: blur(0.1rem);
   z-index: -1; }
 
@@ -410,7 +410,7 @@ body {
   font-size: 1.6rem; }
 
 :root {
-  --color-fullblack: #000000;
+  --color-darkblack: #1f1f1f;
   --color-darkblue: #10133a;
   --color-darkblue-transparent: rgba(16, 19, 58, .95);
   --color-black: #35393d;
