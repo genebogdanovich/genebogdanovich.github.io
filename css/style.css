@@ -298,6 +298,9 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-gap: 6rem;
     align-items: start; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__container {
+        grid-gap: 2rem; } }
 
 .skill {
   display: grid;
@@ -314,8 +317,7 @@ body {
   Projects section
 ==================================== */
 .projects {
-  grid-column: full-start / full-end;
-  padding-top: 2rem; }
+  grid-column: full-start / full-end; }
   .projects__project {
     display: grid;
     grid-template-columns: [full-start] repeat(10, 1fr) [full-end]; }
@@ -349,6 +351,9 @@ body {
 ==================================== */
 .heading-2 {
   padding: 2rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-2 {
+      padding: 1rem 0; } }
 
 /* =================================
   Footer
@@ -429,3 +434,6 @@ body {
   @media only screen and (max-width: 43.75em) {
     .padded-section {
       padding: 2rem 1rem 7rem 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .padded-section {
+      padding: 0 .5rem 1rem .5rem; } }
