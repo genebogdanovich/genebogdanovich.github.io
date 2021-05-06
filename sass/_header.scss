@@ -1,0 +1,26 @@
+@import "abstracts/variables";
+
+.header {
+  background-image: linear-gradient(rgba($color-primary, .95), rgba($color-primary, .95)), -webkit-image-set(
+                  url("../img/background@1x.jpg") 1x,
+                  url("../img/background@2x.jpg") 2x
+  );
+  background-size: cover;
+  background-position: center;
+
+
+  grid-column: full-start / col-end 6;
+
+  display: flex;
+  align-items: center;
+  padding: 0 10vw;
+
+
+
+  &__text {
+    & > * {
+      display: block;
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+@import "../abstracts/variables";
+
+.social {
+  list-style: none;
+  display: flex;
+
+  margin-top: -4rem;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+
+  &__icon {
+    width: 4rem;
+    fill: $color-secondary;
+  }
+}

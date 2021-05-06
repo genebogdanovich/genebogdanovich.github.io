@@ -1,0 +1,11 @@
+@import "../abstracts/variables";
+
+.btn {
+  background-color: $color-primary;
+  color: $color-white-1;
+  border: none;
+  border-radius: 0;
+  font-size: 1.7rem;
+  padding: 1.8rem 4rem;
+  //cursor: pointer;
+}

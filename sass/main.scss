@@ -4,9 +4,15 @@
 
 @import "abstracts/variables";
 
-@import "layout/layout";
+@import "header";
+@import "card";
+@import "project";
+@import "skills";
+@import "footer";
 
+@import "components/social";
 @import "components/avatar";
-@import "components/btn";
-@import "components/tag";
-@import "components/padded-section";
+@import "components/skill";
+@import "components/button";
+
+@import "layout/layout";

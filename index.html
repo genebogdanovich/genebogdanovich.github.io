@@ -1,191 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Gene Bogdanovich &#124; Aspiring iOS Developer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- SEO -->
     <meta name="description" content="An aspiring iOS Developer based in Minsk, Belarus focusing on SwiftUI & Combine.">
-    <meta name="keywords" content="Swift, iOS, Developer">
+    <meta name="keywords" content="iOS, Developer, Swift">
     <meta name="author" content="Gene Bogdanovich">
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
+<!--    <link href="img/favicon/site.webmanifest" rel="manifest">-->
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/main.css">
 </head>
 
 <body class="container">
 
-<nav class="top-nav sticky">
-    <ul class="top-nav__link-box">
-        <li class="top-nav__item"><a class="top-nav__link anchor--navigation--bold" href="#">Gene Bogdanovich</a></li>
-        <li class="top-nav__item"><a class="top-nav__link anchor--navigation" href="#section-skills">Skills</a></li>
-        <li class="top-nav__item"><a class="top-nav__link anchor--navigation" href="#section-projects">Projects</a></li>
-    </ul>
-    <div class="the-blur"></div>
-</nav>
+<header class="header">
 
-<div class="header__card">
+    <h1 class="header__text">
+        <span class="heading-1">Hi, I'm Gene,</span>
+        <span class="heading-2 heading-2--secondary">
+            an aspiring iOS Developer based in <b>Minsk, Belarus</b> focusing on <b>SwiftUI & Combine</b>.
+            Always looking for something new to learn.
+        </span>
+    </h1>
 
-    <img class="avatar" srcset="img/avatar@1x.jpg 1x, img/avatar@2x.jpg 2x" src="img/avatar@1x.jpg" alt="Gene Bogdanovich">
-    <h2 class="heading-secondary">
-        <span class="heading-secondary--main heading-3 centered-text">Gene Bogdanovich</span>
-        <span class="heading-secondary--sub text-gray">Aspiring iOS Developer</span>
+</header>
+
+<div class="card">
+
+    <img class="avatar" srcset="img/avatar@1x.jpg 1x, img/avatar@2x.jpg 2x" src="img/avatar@1x.jpg" alt="Avatar">
+
+    <h2 class="card__text">
+        <span class="heading-2">Gene Bogdanovich</span>
+        <span class="body-heading">Aspiring iOS Developer</span>
     </h2>
 
-    <ul class="header__icon-container">
-        <li class="header__item">
-            <a class="header__link" href="mailto: genebogdanovich@gmail.com"><svg class="header__icon"><use xlink:href="img/sprite.svg#email"></use></svg></a>
+    <ul class="social">
+
+        <li class="social__item">
+            <a href="mailto: genebogdanovich@gmail.com" class="social__link">
+                <svg class="social__icon"><use xlink:href="img/sprite.svg#email"></use></svg>
+            </a>
         </li>
 
-        <li class="header__item">
-            <a class="header__link" href="https://github.com/genebogdanovich" target="_blank"><svg class="header__icon"><use xlink:href="img/sprite.svg#github"></use></svg></a>
+        <li class="social__item">
+            <a href="https://github.com/genebogdanovich" target="_blank" class="social__link">
+                <svg class="social__icon"><use xlink:href="img/sprite.svg#github"></use></svg>
+            </a>
         </li>
 
-        <li class="header__item">
-            <a class="header__link" href="https://www.linkedin.com/in/genebogdanovich" target="_blank"><svg class="header__icon"><use xlink:href="img/sprite.svg#linkedin"></use></svg></a>
+        <li class="social__item">
+            <a href="https://www.linkedin.com/in/genebogdanovich" target="_blank" class="social__link">
+                <svg class="social__icon"><use xlink:href="img/sprite.svg#linkedin"></use></svg>
+            </a>
         </li>
 
-        <li class="header__item">
-            <a class="header__link" href="https://twitter.com/GeneBogdanovich" target="_blank"><svg class="header__icon"><use xlink:href="img/sprite.svg#twitter"></use></svg></a>
+        <li class="social__item">
+            <a href="https://twitter.com/GeneBogdanovich" target="_blank" class="social__link">
+                <svg class="social__icon"><use xlink:href="img/sprite.svg#twitter"></use></svg>
+            </a>
         </li>
+
     </ul>
 
 </div>
 
-<div class="header__text-box">
-    <h1 class="heading-primary">
-        <span class="heading-primary--main heading-1">Hi, I'm Gene,</span>
-        <span class="heading-primary--sub heading-2--secondary">an aspiring iOS Developer based in <b>Minsk, Belarus</b> focusing on <b>SwiftUI & Combine</b>. Always looking for something new to learn.</span>
-    </h1>
+
+
+
+
+
+<section class="skills">
+    <div class="skill">
+        <svg class="skill__icon"><use xlink:href="img/sprite.svg#swift"></use></svg>
+        <h3 class="heading-3">Swift & iOS</h3>
+        <p class="skill__text">
+            App development with Swift is my main focus.
+            I have a solid foundation of iOS concepts and, currently,
+            I am working on a personal project.
+        </p>
+    </div>
+
+    <div class="skill">
+        <svg class="skill__icon"><use xlink:href="img/sprite.svg#html"></use></svg>
+        <h3 class="heading-3">HTML & CSS</h3>
+        <p class="skill__text">
+            I love front-end web development and have a good grasp of most of the fundamental principles behind delivering simple web pages.
+            In fact, I designed and custom-built this website with modern HTML & CSS.
+        </p>
+    </div>
+
+    <div class="skill">
+        <svg class="skill__icon"><use xlink:href="img/sprite.svg#sketch"></use></svg>
+        <h3 class="heading-3">Sketch & design</h3>
+        <p class="skill__text">
+            I am passionate about good design with empathy and accessibility in mind.
+            In my app development journey,
+            I am constantly seeking a better understanding of how design should work on iOS platforms to make an excellent user experience.
+            I am a fluent user of Sketch.
+        </p>
+    </div>
+
+    <div class="skill">
+        <svg class="skill__icon"><use xlink:href="img/sprite.svg#database"></use></svg>
+        <h3 class="heading-3">Databases & SQL</h3>
+        <p class="skill__text">
+            I have a deep knowledge of Core Data framework. I can find my way around a SQL-backed database,
+            and I have some experience with Google’s Firebase.
+        </p>
+    </div>
+
+    <div class="skill">
+        <svg class="skill__icon"><use xlink:href="img/sprite.svg#flag"></use></svg>
+        <h3 class="heading-3">Confident English & presentation skills</h3>
+        <p class="skill__text">
+            Learning English has been one of my biggest passions ever since I was in middle school.
+            And I love giving eloquent presentations and sharing ideas.
+        </p>
+    </div>
+
+    <div class="skill">
+        <svg class="skill__icon"><use xlink:href="img/sprite.svg#sun"></use></svg>
+        <h3 class="heading-3">Emotional intelligence & team work</h3>
+        <p class="skill__text">
+            I spent a great deal of time volunteering in Belarusian Red Cross. Along the way,
+            I picked up the skills necessary to work in teams effectively.
+        </p>
+    </div>
+</section>
+
+<div class="project__app">
+    <img src="img/iphone@1x.png" alt="ProgressGuard" class="project__img" srcset="img/iphone@1x.png 1x, img/iphone@2x.png 2x">
 </div>
 
-<section id="section-skills" class="skills padded-section">
-    <h2 class="heading-2 centered-text">Skills</h2>
-    <div class="skills__container">
+<div class="project__content">
+    <h4 class="heading-4">Current Project</h4>
+    <h2 class="heading-2 mb-sm">ProgressGuard</h2>
+    <p class="project__text">
+        ProgressGuard helps martial arts practitioners to track learning progress in a simple and elegant way.
+        After each training session, users can reflect on what they have learned and their performance.
+        The app will set you on a path to a more mindful combat sports journey.
+    </p>
+    <button class="btn" disabled>Coming in 2022</button>
+</div>
 
-        <div class="skill">
-            <svg class="skill__icon"><use xlink:href="img/sprite.svg#swift"></use></svg>
-            <h3 class="heading-3">Swift & iOS</h3>
-            <p>Currently, I’m working on my portfolio projects to develop and showcase my skills.
-                I’m using Apple’s latest SwiftUI and Combine frameworks.</p>
-        </div>
-
-        <div class="skill">
-            <svg class="skill__icon"><use xlink:href="img/sprite.svg#html"></use></svg>
-            <h3 class="heading-3">HTML & CSS</h3>
-            <p>I love front-end web development. In fact, I hand-built this website with modern CSS.
-                Got a lot of practice with Flexbox, Grid, SCSS, and much more.</p>
-        </div>
-
-        <div class="skill">
-            <svg class="skill__icon"><use xlink:href="img/sprite.svg#sketch"></use></svg>
-            <h3 class="heading-3">Sketch & Design</h3>
-            <p>I’m very passionate about good design with accessibility and empathy in mind. Plus, I am an experienced user of Sketch.</p>
-        </div>
-
-        <div class="skill">
-            <svg class="skill__icon"><use xlink:href="img/sprite.svg#database"></use></svg>
-            <h3 class="heading-3">Databases & SQL</h3>
-            <p>I’m rather confident with Core Data. SQL is not gonna scare me, and, currently, I’m digging into Google’s Firebase.</p>
-        </div>
-
-        <div class="skill">
-            <svg class="skill__icon"><use xlink:href="img/sprite.svg#usa"></use></svg>
-            <h3 class="heading-3">Confident English & Presentation Skills</h3>
-            <p>Learning English has been one of my biggest passions ever since I was in middle school. I love giving eloquent presentations and sharing ideas.</p>
-        </div>
-
-        <div class="skill">
-            <svg class="skill__icon"><use xlink:href="img/sprite.svg#sunset"></use></svg>
-            <h3 class="heading-3">Emotional Intelligence & Team Work</h3>
-            <p>In 2015 I joined Red Cross and along the way I picked up a lot of soft skills. I love working in teams.</p>
-        </div>
-    </div>
-</section>
-
-
-
-<section id="section-projects" class="projects">
-
-    <h2 class="heading-2 centered-text">Projects</h2>
-
-    <div class="projects__list">
-
-        <div class="projects__project">
-
-            <div class="projects__details">
-                <h3 class="heading-3">RemindMe</h3>
-                <p>This is a task-tracking app that takes inspiration from Apple’s standard Reminders app.
-                    It mixes SwiftUI with UIKit, utilizes Core Data with MVVM.</p>
-
-                <ul class="projects__tags">
-                    <li class="tag">SwiftUI</li>
-                    <li class="tag">Core Data</li>
-                    <li class="tag">MVVM</li>
-                </ul>
-
-                <a href="https://github.com/genebogdanovich/RemindMe" target="_blank" class="btn anchor--navigation">
-                    Checkout on GitHub
-                    <svg class="btn__icon"><use xlink:href="img/sprite.svg#github-button"></use></svg>
-                </a>
-
-            </div>
-
-
-            <img alt="RemindMe" class="projects__img" srcset="img/remindme@1x.png 1x, img/remindme@2x.png 2x" src="img/remindme@1x.png">
-
-        </div>
-
-        <div class="projects__project">
-
-            <div class="projects__details">
-                <h3 class="heading-3">Misty</h3>
-                <p>Misty is an elegant weather app that uses Combine for all of its business logic.
-                    It builds a reactive layer on older Apple’s API Core Location that uses Delegation.</p>
-
-                <ul class="projects__tags">
-                    <li class="tag">Combine</li>
-                    <li class="tag">SwiftUI</li>
-                    <li class="tag">Networking</li>
-                    <li class="tag">MVVM</li>
-
-
-                </ul>
-
-                <a href="https://github.com/genebogdanovich/Misty" target="_blank" class="btn anchor--navigation">
-                    Checkout on GitHub
-                    <svg class="btn__icon"><use xlink:href="img/sprite.svg#github-button"></use></svg>
-                </a>
-
-            </div>
-
-
-            <img alt="Misty" class="projects__img" srcset="img/misty@1x.png 1x, img/misty@2x.png 2x" src="img/misty@1x.png">
-
-        </div>
-    </div>
-</section>
 
 <footer class="footer">
-    <ul class="bottom-nav">
-        <li class="bottom-nav__item"><a href="https://github.com/genebogdanovich/genebogdanovich.github.io" target="_blank" class="bottom-nav__link anchor--navigation">This website on GitHub</a></li>
+
+
+    <ul class="nav">
+        <li class="nav__item"><a href="#" class="nav__link">Privacy Policy</a></li>
     </ul>
 
-    <p class="copyright">
-        Icons by <a href="https://twitter.com/alexandrustk" class="anchor" target="_blank">@alexandrustk</a> and <a href="https://twitter.com/jatodaro" class="anchor" target="_blank">@jatodaro</a>.
-        iPhone X mockup by <a href="https://twitter.com/gregdlubacz" class="anchor" target="_blank">@gregdlubacz</a>.
-        Misty app background photo by <a href="https://unsplash.com/@christianmategrab" target="_blank" class="anchor">Christian Grab</a> on <a href="https://unsplash.com" target="_blank" class="anchor">Unsplash</a>.</p>
 
-    <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> by Yauhen Bahdanovich.</p>
+
+    <p class="copyright">
+
+        This website contains material copyrighted by 3rd parties.
+        Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries.<br>
+
+        Background photo by <a class ="copyright__link" href="https://unsplash.com/@mrdongok" target="_blank">Rudy Dong</a> on <a class ="copyright__link" href="https://unsplash.com" target="_blank">Unsplash</a>.
+
+        Icons made by <a class ="copyright__link" href="https://twitter.com/alexandrustk" target="_blank">@alexandrustk</a> and <a
+            class ="copyright__link" href="https://twitter.com/Jatodaro" target="_blank">@jatodaro</a>.
+
+        iPhone mockup made by <a class ="copyright__link" href="https://twitter.com/gregdlubacz" target="_blank">@gregdlubacz</a>.<br>
+
+        © Copyright <script>
+        document.write(new Date().getFullYear())</script> by Yauhen Bahdanovich. All rights reserved.
+    </p>
 </footer>
+
 </body>
 </html>
+

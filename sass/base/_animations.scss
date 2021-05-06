@@ -1,43 +1,8 @@
 /* =================================
-  Top navigation
-==================================== */
-
-.top-nav {
-  &__link:link,
-  &__link:visited {
-    transition: all .2s;
-  }
-
-  &__link:hover {
-    background-color: var(--color-fullwhite-transparent);
-    color: var(--color-fullwhite);
-  }
-}
-
-/* =================================
-  Button
-==================================== */
-
-.btn:link,
-.btn:visited {
-  transition: all .2s;
-}
-
-.btn:hover {
-  transform: translateY(-.3rem);
-  box-shadow: 0 1rem 2rem rgba(black, .2);
-}
-
-.btn:active {
-  transform: translateY(-.1rem);
-  box-shadow: 0 .5rem 1rem rgba(black, .2);
-}
-
-/* =================================
   Social icons
 ==================================== */
 
-.header {
+.social {
   &__icon {
     transition: all .2s;
   }
@@ -48,22 +13,5 @@
 
   &__icon:active {
     transform: translateY(-.1rem);
-  }
-}
-
-/* =================================
-  Bottom navigation
-==================================== */
-
-.bottom-nav {
-  &__link:link,
-  &__link:visited {
-    transition: all .2s;
-  }
-
-  &__link:hover,
-  &__link:active {
-    background-color: var(--color-fullwhite-transparent);
-    transform: translateY(-3px);
   }
 }

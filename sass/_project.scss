@@ -1,0 +1,37 @@
+@import "abstracts/variables";
+
+.project {
+  &__app {
+    background-color: $color-white-2;
+
+    grid-column: full-start / col-end 4;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__img {
+    display: block;
+    height: 100%;
+  }
+
+  &__content {
+    background-color: $color-white-2;
+    padding-right: 16vw;
+    padding-left: 1rem;
+
+    grid-column: col-start 5 / full-end;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+}

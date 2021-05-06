@@ -1,0 +1,358 @@
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+/* =================================
+  Social icons
+==================================== */
+.social__icon {
+  transition: all 0.2s;
+}
+.social__icon:hover {
+  transform: translateY(-0.3rem);
+}
+.social__icon:active {
+  transform: translateY(-0.1rem);
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+/* =================================
+  Body
+==================================== */
+body {
+  font-family: proxima-nova, sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #2B2B2B;
+}
+
+/* =================================
+  Headings
+==================================== */
+.heading-1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.heading-2 {
+  color: #1E4D79;
+  font-size: 2.6rem;
+}
+.heading-2--secondary {
+  color: white;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+}
+
+.heading-3 {
+  color: #1F1F1F;
+  font-size: 1.9rem;
+}
+
+.heading-4 {
+  color: #1F1F1F;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.body-heading {
+  text-align: center;
+  font-weight: 400;
+  color: #707070;
+  font-size: 1.7rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.copyright__link:link, .copyright__link:visited {
+  color: whitesmoke;
+  transition: all 0.2s;
+}
+.copyright__link:hover, .copyright__link:active {
+  color: rgba(245, 245, 245, 0.75);
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+.header {
+  background-image: linear-gradient(rgba(30, 77, 121, 0.95), rgba(30, 77, 121, 0.95)), -webkit-image-set(url("../img/background@1x.jpg") 1x, url("../img/background@2x.jpg") 2x);
+  background-size: cover;
+  background-position: center;
+  grid-column: full-start/col-end 6;
+  display: flex;
+  align-items: center;
+  padding: 0 10vw;
+}
+.header__text > * {
+  display: block;
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+.card {
+  background-color: whitesmoke;
+  grid-column: col-start 7/full-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__text > * {
+  display: block;
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+.project__app {
+  background-color: whitesmoke;
+  grid-column: full-start/col-end 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.project__img {
+  display: block;
+  height: 100%;
+}
+.project__content {
+  background-color: whitesmoke;
+  padding-right: 16vw;
+  padding-left: 1rem;
+  grid-column: col-start 5/full-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.project__text {
+  margin-bottom: 2rem;
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+.skills {
+  margin: 8rem 0;
+  grid-column: center-start/center-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 6rem;
+  align-items: start;
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+.footer {
+  background-color: #1E4D79;
+  padding: 4rem;
+  grid-column: full-start/full-end;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav__link:link, .nav__link:visited {
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem;
+  display: block;
+  transition: all 0.2s;
+}
+.nav__link:hover, .nav__link:active {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+.social {
+  list-style: none;
+  display: flex;
+  margin-top: -4rem;
+}
+.social__item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.social__icon {
+  width: 4rem;
+  fill: #1D88B6;
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+.avatar {
+  display: block;
+  max-width: 100%;
+  max-height: 20rem;
+  border-radius: 50%;
+  border: 1px solid #1D88B6;
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+.skill {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+}
+.skill__icon {
+  fill: #1D88B6;
+  width: 4.5rem;
+  height: 4.5rem;
+  grid-row: 1/span 2;
+  transform: translateY(-1rem);
+}
+
+/* =================================
+  Color variables
+==================================== */
+/* =================================
+  Fonts
+==================================== */
+/* =================================
+  Responsive breakpoints
+==================================== */
+.btn {
+  background-color: #1E4D79;
+  color: white;
+  border: none;
+  border-radius: 0;
+  font-size: 1.7rem;
+  padding: 1.8rem 4rem;
+}
+
+/* =================================
+  Atomic components
+==================================== */
+.mb-sm {
+  margin-bottom: 1rem;
+}
+
+.mb-md {
+  margin-bottom: 2rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-hg {
+  margin-bottom: 6rem;
+}
+
+/*# sourceMappingURL=main.css.map */

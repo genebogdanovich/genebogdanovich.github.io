@@ -1,37 +1,20 @@
 @import "../abstracts/variables";
 
-/* =================================
-  Reset
-==================================== */
-
 *,
-*::after,
-*::before {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
-  // Root font size.
-  // 10px / 16 = 62.5%.
-  font-size: 62.5%;
-  // This is 10px. Use rem units to set sizes. Example: 17px is 1.7rem.
-  // We use this to define what one rem is.
-
-  @media only screen and (max-width: $bp-large) {
-    font-size: 50%;
-  }
-}
-
-body {
   box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% => 1rem = 10px.
 }
 
-ul, ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+.container {
+  display: grid;
+  grid-template-rows: 80vh;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }

@@ -1,25 +1,28 @@
-:root {
-  // COLORS
-  --color-darkblack: #1f1f1f;
-  --color-darkblue: #10133a;
-  --color-darkblue-transparent: rgba(16, 19, 58, .95);
-  --color-black: #35393d;
-  --color-darkgray: #707070;
-  --color-blue: #1b96f3;
-  --color-lightgray: #e8e8e8;
-  --color-whitesmoke: #f5f5f5;
-  --color-fullwhite: #ffffff;
-  --color-blue-transparent: rgba(27, 150, 243, .1);
-  --color-fullwhite-transparent: rgba(255, 255, 255, .1);
+/* =================================
+  Color variables
+==================================== */
 
-  // FONTS
-  --font-stack: proxima-nova, sans-serif;
-}
+$color-primary: #1E4D79;
+$color-secondary: #1D88B6;
 
-// RESPONSIVE BREAKPOINTS
+$color-black-1: #2B2B2B;
+$color-black-2: #1F1F1F;
 
-// x / 16 = breakpoint size.
+$color-white-1: white;
+$color-white-2: whitesmoke;
 
-$bp-large: 55.62em; // 890px smaller font.
-$bp-medium: 43.75em; // 700px remove paddings.
-$bp-small: 37.5em; // 600px collapse everything to one column.
+$color-gray: #707070;
+
+/* =================================
+  Fonts
+==================================== */
+
+$font-primary: proxima-nova, sans-serif;
+$font-secondary: 'Merriweather', serif;
+
+/* =================================
+  Responsive breakpoints
+==================================== */
+
+$bp-large: 75em; // 1200px
+
