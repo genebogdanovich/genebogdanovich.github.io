@@ -7,6 +7,23 @@
 /* =================================
   Responsive breakpoints
 ==================================== */
+/* =================================
+  Media Query Manager
+==================================== */
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800px] is where our normal styles apply
+1800px+: Big desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 *,
 *::before,
 *::after {
@@ -19,11 +36,31 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 68.75%;
+  }
+}
 
 .container {
   display: grid;
-  grid-template-rows: 80vh;
+  grid-template-rows: 70vh;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+@media only screen and (max-width: 50em) {
+  .container {
+    grid-template-rows: min-content 50vh;
+  }
 }
 
 /* =================================
@@ -119,6 +156,23 @@ body {
   Responsive breakpoints
 ==================================== */
 /* =================================
+  Media Query Manager
+==================================== */
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800px] is where our normal styles apply
+1800px+: Big desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/* =================================
   Color variables
 ==================================== */
 /* =================================
@@ -127,6 +181,23 @@ body {
 /* =================================
   Responsive breakpoints
 ==================================== */
+/* =================================
+  Media Query Manager
+==================================== */
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800px] is where our normal styles apply
+1800px+: Big desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 .header {
   background-image: linear-gradient(rgba(30, 77, 121, 0.95), rgba(30, 77, 121, 0.95)), -webkit-image-set(url("../img/background@1x.jpg") 1x, url("../img/background@2x.jpg") 2x);
   background-size: cover;
@@ -135,6 +206,13 @@ body {
   display: flex;
   align-items: center;
   padding: 0 10vw;
+}
+@media only screen and (max-width: 50em) {
+  .header {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    padding: 2rem;
+  }
 }
 .header__text > * {
   display: block;
@@ -149,6 +227,23 @@ body {
 /* =================================
   Responsive breakpoints
 ==================================== */
+/* =================================
+  Media Query Manager
+==================================== */
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800px] is where our normal styles apply
+1800px+: Big desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 .card {
   background-color: whitesmoke;
   grid-column: col-start 7/full-end;
@@ -156,6 +251,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 50em) {
+  .card {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    padding-top: 7rem;
+  }
 }
 .card__text > * {
   display: block;
@@ -170,12 +272,35 @@ body {
 /* =================================
   Responsive breakpoints
 ==================================== */
+/* =================================
+  Media Query Manager
+==================================== */
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800px] is where our normal styles apply
+1800px+: Big desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 .project__app {
   background-color: whitesmoke;
   grid-column: full-start/col-end 4;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+@media only screen and (max-width: 50em) {
+  .project__app {
+    grid-column: 1/-1;
+    justify-content: center;
+  }
 }
 .project__img {
   display: block;
@@ -190,6 +315,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+}
+@media only screen and (max-width: 50em) {
+  .project__content {
+    grid-column: 1/-1;
+    padding: 0 4rem 6rem 4rem;
+  }
 }
 .project__text {
   margin-bottom: 2rem;
@@ -265,10 +396,32 @@ body {
 /* =================================
   Responsive breakpoints
 ==================================== */
+/* =================================
+  Media Query Manager
+==================================== */
+/*
+0 - 600px: Phone
+600 - 900px: Tablet portrait
+900 - 1200px: Tablet landscape
+[1200 - 1800px] is where our normal styles apply
+1800px+: Big desktop
+*/
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 .social {
   list-style: none;
   display: flex;
   margin-top: -4rem;
+}
+@media only screen and (max-width: 50em) {
+  .social {
+    margin-top: -6rem;
+  }
 }
 .social__item:not(:last-child) {
   margin-right: 0.5rem;

@@ -1,10 +1,18 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 .project {
   &__app {
     background-color: $color-white-2;
 
     grid-column: full-start / col-end 4;
+
+    // Is the width smaller than 900px?
+    @include respond(tab-port)  {
+      grid-column: 1 / -1;
+      justify-content: center;
+
+    }
 
     display: flex;
     justify-content: flex-end;
@@ -22,6 +30,12 @@
     padding-left: 1rem;
 
     grid-column: col-start 5 / full-end;
+
+    // Is the width smaller than 900px?
+    @include respond(tab-port)  {
+      grid-column: 1 / -1;
+      padding: 0 4rem 6rem 4rem;
+    }
 
     display: flex;
     flex-direction: column;

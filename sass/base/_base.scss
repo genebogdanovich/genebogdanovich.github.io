@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 *,
 *::before,
@@ -10,11 +11,38 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 10px / 16px = 62.5% => 1rem = 10px.
+  font-size: 62.5%; // 10px / 16px = 62.5% => 1rem = 10px
+
+  // Is the width smaller than 1200px?
+  @include respond(tab-land)  {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  // Is the width smaller than 900px?
+  @include respond(tab-port)  {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  // Is the width smaller than 600px?
+  //@include respond(phone)  {
+  //  font-size: 50%;
+  //}
+
+  @include respond(big-desktop)  {
+    font-size: 68.75%; // 1rem = 11px
+  }
 }
 
 .container {
   display: grid;
-  grid-template-rows: 80vh;
+  grid-template-rows: 70vh;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+
+
+  // Collapse the design
+  // Is the width smaller than 900px?
+  @include respond(tab-port)  {
+    grid-template-rows: min-content 50vh;
+    // columns stay the same.
+  }
 }
