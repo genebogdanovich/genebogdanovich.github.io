@@ -15,3 +15,16 @@
     transform: translateY(-.1rem);
   }
 }
+
+/* =================================
+  Copyright links
+==================================== */
+
+.copyright {
+  &__link {
+    &:link,
+    &:visited {
+      transition: all .2s;
+    }
+  }
+}

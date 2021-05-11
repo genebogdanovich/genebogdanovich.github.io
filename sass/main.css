@@ -77,6 +77,13 @@ html {
 }
 
 /* =================================
+  Copyright links
+==================================== */
+.copyright__link:link, .copyright__link:visited {
+  transition: all 0.2s;
+}
+
+/* =================================
   Color variables
 ==================================== */
 /* =================================
@@ -105,10 +112,10 @@ body {
 }
 
 .heading-2 {
-  color: #1E4D79;
+  color: #1F1F1F;
   font-size: 2.6rem;
 }
-.heading-2--secondary {
+.heading-2--sub {
   color: white;
   font-family: "Merriweather", serif;
   font-weight: 300;
@@ -120,8 +127,8 @@ body {
 }
 
 .heading-4 {
-  color: #1F1F1F;
-  font-weight: 300;
+  color: #1E4D79;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 1.4rem;
 }
@@ -139,11 +146,13 @@ body {
   text-align: center;
 }
 .copyright__link:link, .copyright__link:visited {
-  color: whitesmoke;
+  color: rgba(245, 245, 245, 0.9);
+  text-decoration: none;
   transition: all 0.2s;
 }
 .copyright__link:hover, .copyright__link:active {
-  color: rgba(245, 245, 245, 0.75);
+  color: whitesmoke;
+  text-decoration: underline;
 }
 
 /* =================================

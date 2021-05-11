@@ -22,10 +22,11 @@ body {
 }
 
 .heading-2 {
-  color: $color-primary;
+  color: $color-black-2;
+
   font-size: 2.6rem;
 
-  &--secondary {
+  &--sub {
     color: $color-white-1;
     font-family: $font-secondary;
     font-weight: 300;
@@ -38,8 +39,8 @@ body {
 }
 
 .heading-4 {
-  color: $color-black-2;
-  font-weight: 300;
+  color: $color-primary;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 1.4rem;
 }
@@ -59,13 +60,15 @@ body {
   &__link {
     &:link,
     &:visited {
-      color: $color-white-2;
+      color: rgba($color-white-2, .9);
+      text-decoration: none;
       transition: all .2s;
     }
 
     &:hover,
     &:active {
-      color: rgba($color-white-2, .75);
+      color: $color-white-2;
+      text-decoration: underline;
     }
   }
 }

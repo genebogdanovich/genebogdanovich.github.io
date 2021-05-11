@@ -43,6 +43,6 @@ html {
   // Is the width smaller than 900px?
   @include respond(tab-port)  {
     grid-template-rows: min-content 50vh;
-    // columns stay the same.
+    // Columns stay the same.
   }
 }
