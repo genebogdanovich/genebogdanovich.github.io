@@ -3,9 +3,21 @@
 .btn {
   background-color: $color-primary;
   color: $color-white-1;
+  text-decoration: none;
   border: none;
   border-radius: 0;
   font-size: 1.7rem;
   padding: 1.8rem 4rem;
-  //cursor: pointer;
+  cursor: pointer;
+  transition: all .2s;
+
+  // Animations
+
+  &:hover {
+    transform: translateY(-.3rem);
+  }
+
+  &:active {
+    transform: translateY(-.1rem);
+  }
 }

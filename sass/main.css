@@ -492,10 +492,19 @@ $breakpoint argument choices:
 .btn {
   background-color: #1E4D79;
   color: white;
+  text-decoration: none;
   border: none;
   border-radius: 0;
   font-size: 1.7rem;
   padding: 1.8rem 4rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: translateY(-0.3rem);
+}
+.btn:active {
+  transform: translateY(-0.1rem);
 }
 
 /* =================================
