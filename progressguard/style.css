@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.7rem;
+    margin: auto;
+    width: 45%;
+    color: #2b2b2b;
+}
+
+h1,h2,h3 {
+    color: #1f1f1f;
+}
+
+@media screen and (max-width: 75em) {
+    body { width: 65%; }
+    html { font-size: 56.25%; }
+}
+
+@media screen and (max-width: 50em) {
+    body { width: 75%; }
+    html { font-size: 50%; }
+}
+
+@media screen and (max-width: 37.5em) {
+    body { width: 90%; }
+}
+
+
+
