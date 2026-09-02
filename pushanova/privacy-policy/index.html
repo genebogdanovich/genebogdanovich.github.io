@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Pushanova</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Privacy Policy for Pushanova</h1>
+
+    <p><b>Last updated: September 2, 2026</b></p>
+
+    <p>
+        This Privacy Policy explains how <b>Yauhen Bahdanovich</b>, an individual developer in the <b>Republic of Belarus</b> (“I,” “me,” or “the developer”), handles information in the <b>Pushanova</b> app for iPhone, iPad, and Apple Watch (the “App”).
+    </p>
+
+    <p>
+        If you have questions, contact <a href="mailto:info@genebogdanovich.com">info@genebogdanovich.com</a>.
+    </p>
+
+    <p>
+        Pushanova does not require an account. There is no sign-up, no username, and no social-media login.
+    </p>
+
+    <h2 id="face-data">1. Face Data and the TrueDepth API</h2>
+
+    <p>
+        This section describes Pushanova’s use of Apple’s TrueDepth camera and ARKit face tracking. It is the section that addresses collection, use, disclosure, sharing, retention, deletion, and storage of face data.
+    </p>
+
+    <h3>What information is collected using the TrueDepth API</h3>
+
+    <p>
+        On iPhone and iPad models that support TrueDepth, Pushanova may use the TrueDepth camera and ARKit face tracking during a workout to measure the <b>distance between the user’s face and the device</b>, together with a <b>timestamp</b> for each measurement.
+    </p>
+
+    <p>
+        That distance is a number (in meters). Pushanova uses it to detect changes in distance while the user performs push-ups, and to count repetitions.
+    </p>
+
+    <p>Pushanova does <b>not</b> use the TrueDepth API to:</p>
+
+    <ul>
+        <li>take, save, or analyze photographs or video</li>
+        <li>capture a face mesh, depth map image, or texture</li>
+        <li>collect blend shapes or other facial-expression maps</li>
+        <li>identify a person, create a biometric faceprint, or authenticate a user</li>
+        <li>infer identity, age, sex, race, health condition, or any characteristic other than face-to-device distance over time</li>
+    </ul>
+
+    <p>
+        The App does not store images or video from the TrueDepth camera as part of push-up detection.
+    </p>
+
+    <p>
+        <b>Apple Watch does not use the TrueDepth camera.</b> Watch-based counting uses motion sensors and HealthKit, not TrueDepth and not face data.
+    </p>
+
+    <h3>For what purposes this information is collected</h3>
+
+    <p>Face-to-device distance and timestamps are used only to:</p>
+
+    <ul>
+        <li>count push-ups automatically on supported iPhone and iPad models</li>
+        <li>keep a distance waveform with the workout so the user and the App can review that session</li>
+        <li>support diagnostics if the user reports a counting problem</li>
+        <li>support related, counting-focused product features, including possible future rep-quality analysis</li>
+    </ul>
+
+    <p>
+        Face data is <b>not</b> used for advertising, advertising measurement, remarketing, profiling for marketing, or analytics that identify a person. It is not used to track users across other companies’ apps or websites. It is not sold. It is not shared with partners, contractors, laboratories, or data brokers.
+    </p>
+
+    <h3>Storage</h3>
+
+    <p>
+        During an active workout, distance values are processed on the user’s device in real time.
+    </p>
+
+    <p>
+        If the workout is saved, the distance waveform (<code>face-to-device distance</code> + <code>timestamp</code>) is stored <b>on the user’s device</b> as part of that workout record, together with other workout data such as repetition counts and, where applicable, motion samples.
+    </p>
+
+    <p>
+        If iCloud / CloudKit sync is enabled for the App, that same workout record — including the face-distance waveform — may be stored in the <b>user’s own iCloud account</b> on Apple’s servers so it can appear on the user’s other devices. That is the user’s iCloud storage, not a public feed, and not a database I browse for all users.
+    </p>
+
+    <p>
+        I do not operate a Pushanova server that receives TrueDepth data automatically.
+    </p>
+
+    <h3>Sharing and disclosure</h3>
+
+    <p>
+        Face data is <b>not</b> shared with third parties for their own purposes.
+    </p>
+
+    <p>
+        The only situations in which face-distance data can leave the user’s device besides the user’s own iCloud sync are:
+    </p>
+
+    <ol>
+        <li>
+            <b>Apple iCloud / CloudKit</b>, if the user uses iCloud with the App, as described above. Apple provides that infrastructure under Apple’s terms and privacy policy.
+        </li>
+        <li>
+            <b>A report the user chooses to send.</b> If the user uses “Report an Issue” (or similar) and emails workout diagnostics, the email may include the face-distance waveform for that workout, plus related workout metadata such as repetition counts, timestamps, motion/gravity samples, notes the user types, app version, and locale. That email is sent to <a href="mailto:info@genebogdanovich.com">info@genebogdanovich.com</a> only because the user chose to send it. It does not include photos, video, or a recording of the user’s face.
+        </li>
+        <li>
+            <b>Legal requirement.</b> I may disclose information if required by law or a valid legal process.
+        </li>
+    </ol>
+
+    <p>
+        Face-distance data is <b>not</b> sent to Firebase, Google Analytics, Crashlytics, advertisers, or any other analytics or advertising SDK.
+    </p>
+
+    <h3>Retention</h3>
+
+    <p>
+        On the user’s device (and in the user’s iCloud, if sync is on), the face-distance waveform is kept <b>for as long as the workout is kept</b>. It is retained so the App can show history and so future counting, diagnostic, and rep-quality features can use that session’s measurements.
+    </p>
+
+    <p>
+        I do not receive that waveform unless the user emails it.
+    </p>
+
+    <p>
+        If the user emails a diagnostic report that includes face-distance data, I keep that copy <b>only to debug and improve push-up detection and related App functionality</b>, and for as long as that purpose reasonably requires.
+    </p>
+
+    <h3>Deletion</h3>
+
+    <p>
+        The user can delete a workout in Pushanova. Deleting the workout deletes the stored face-distance waveform for that workout from the App’s on-device store. If iCloud sync is enabled, deletion is also propagated according to Apple’s iCloud / CloudKit behavior.
+    </p>
+
+    <p>
+        Uninstalling the App removes the App’s on-device data. Data already in the user’s iCloud may remain until the user deletes it there or the iCloud data is otherwise removed under Apple’s rules.
+    </p>
+
+    <p>
+        If the user emailed me a diagnostic report and wants that copy deleted, they can email <a href="mailto:info@genebogdanovich.com">info@genebogdanovich.com</a>. I will delete the copy I control. I cannot delete copies that remain only on the user’s device, in the user’s email sent-mail, or in the user’s iCloud account.
+    </p>
+
+    <h3>What this section does not cover</h3>
+
+    <p>
+        Post-workout photos the user takes with the regular camera, HealthKit data, Watch motion data, and optional featuring submissions are <b>not</b> TrueDepth face data. They are described in the sections below.
+    </p>
+
+    <h2>2. Other information processed by the App</h2>
+
+    <h3>Workout records on the device and iCloud</h3>
+
+    <p>The App stores workout history the user creates, which may include:</p>
+
+    <ul>
+        <li>start and end times, duration, mode or level, and repetition counts</li>
+        <li>pace and cadence derived from those counts</li>
+        <li>face-distance waveforms (TrueDepth sessions only), as described in Section 1</li>
+        <li>motion samples (for example gravity, acceleration, and attitude), especially for Apple Watch or non-TrueDepth sessions</li>
+        <li>notes or feeling ratings the user enters</li>
+        <li>references to a related HealthKit workout, when Health access is enabled</li>
+    </ul>
+
+    <p>
+        This data is stored on the user’s device and may sync via the user’s iCloud account. I do not receive it automatically.
+    </p>
+
+    <h3>Information the user sends by email</h3>
+
+    <p>
+        If the user emails me (support, a detection report, or a featuring submission), I receive whatever they include: message text, email address, and any attachments. I use that to respond, to operate and improve the App, and — for featuring submissions — as described in Section 4.
+    </p>
+
+    <h3>Device permissions</h3>
+
+    <p>
+        The App may ask iOS or watchOS for camera, motion, Health, notifications, or photo-library (add-only) access. Those systems gate the data. Denying a permission may disable the related feature (for example, automatic TrueDepth counting without camera access).
+    </p>
+
+    <h2>3. Health and Fitness (HealthKit)</h2>
+
+    <p>With the user’s permission, Pushanova may:</p>
+
+    <p><b>Write to Apple Health</b></p>
+
+    <ul>
+        <li>workouts</li>
+        <li>active energy</li>
+    </ul>
+
+    <p><b>Read from Apple Health</b></p>
+
+    <ul>
+        <li>workouts</li>
+        <li>heart rate</li>
+        <li>active energy</li>
+        <li>basal energy</li>
+        <li>body mass (used to estimate energy when needed)</li>
+    </ul>
+
+    <p>
+        Health data is used to run and save workouts, show heart-rate and energy information, and keep the App’s log consistent with Apple Health when the user has allowed that.
+    </p>
+
+    <p>
+        HealthKit data is not used for advertising or sold to data brokers. It is not shared with third parties except Apple Health on the user’s device (and the user’s iCloud Health data, if the user uses that Apple feature) and except copies the user explicitly emails in a diagnostic report (which may include workout metadata; diagnostic reports are not a dump of the user’s full Health database).
+    </p>
+
+    <p>
+        The user can change Health access in iOS or watchOS Settings. Deleting a workout in Pushanova may also delete the related HealthKit workout when the App is allowed to do so.
+    </p>
+
+    <h2>4. Photos and featuring submissions</h2>
+
+    <p>
+        Pushanova can take or use a <b>post-workout photo</b> with the regular camera. That is separate from TrueDepth push-up counting. TrueDepth counting does not take or store that photo.
+    </p>
+
+    <p>
+        Photos stay on the user’s device unless the user shares them through the system share sheet, saves them to the photo library, or emails a <b>featuring submission</b>.
+    </p>
+
+    <p>
+        Featuring is optional. The App works without it.
+    </p>
+
+    <p>
+        If the user emails a featuring submission to <a href="mailto:info@genebogdanovich.com">info@genebogdanovich.com</a>, they may include a photo and, if they choose, their name, city, and a short message. By submitting, they ask me to consider displaying that content on Pushanova’s official social media accounts (including Instagram) and similar official channels. Being featured is not guaranteed. Valid submissions that meet the stated requirements may receive a promo code for Pushanova Premium, as described in the App.
+    </p>
+
+    <p>
+        <b>Age for submissions.</b> Sending a photo, name, city, or message is not allowed for young children. You must be <b>at least 16 years old</b> to submit. If you are <b>13 to 15</b>, you may submit only with permission from a parent or legal guardian, and only where local law allows that. In the European Economic Area, the United Kingdom, and any other region where the digital age of consent is 16 (or higher), <b>you must meet that age</b> to submit. Pushanova is rated 4+ for general use of the App; that rating does not allow children to send personal photos or contact details for public posting.
+    </p>
+
+    <p>
+        The user may request removal of a submission they sent by emailing <a href="mailto:info@genebogdanovich.com">info@genebogdanovich.com</a>. I will remove it from channels I control. I cannot control copies other people have already saved, or a platform’s own backup or cache after a post is removed.
+    </p>
+
+    <h2>5. Analytics and crash reports</h2>
+
+    <p>
+        The App uses <b>Firebase Analytics</b> and <b>Firebase Crashlytics</b> (Google) for standard product analytics and crash reporting. This may include how features are used, device type, OS version, language, and crash or performance diagnostics.
+    </p>
+
+    <p>
+        These services are <b>not</b> given TrueDepth data, face-distance waveforms, photos, or Health samples. They are not used to track the user across third-party apps and websites for advertising. I do not use them to sell personal information.
+    </p>
+
+    <p>
+        Google’s processing is also described in Google’s privacy policy.
+    </p>
+
+    <h2>6. Purchases</h2>
+
+    <p>
+        Optional Pushanova Premium and other in-app purchases are processed by <b>Apple</b>. I do not receive the user’s full payment card details. The App may receive purchase or subscription status from Apple so it can unlock paid features. Refunds and billing are handled by Apple.
+    </p>
+
+    <h2>7. Notifications</h2>
+
+    <p>
+        If the user allows notifications, Pushanova may schedule <b>local</b> reminders on the device (for example, workout reminders). Those notifications are not an excuse to collect extra personal data on a server.
+    </p>
+
+    <h2>8. How information is shared</h2>
+
+    <p>
+        I do not sell personal information.
+    </p>
+
+    <p>
+        I share information only as follows:
+    </p>
+
+    <ul>
+        <li><b>Apple</b>, as the platform: App Store, StoreKit, HealthKit, iCloud/CloudKit, device operating system</li>
+        <li><b>Google</b>, only as the provider of Firebase Analytics and Crashlytics, as described in Section 5, and not for face data</li>
+        <li><b>The user</b>, when they share a photo or file themselves</li>
+        <li><b>Email I receive</b> when the user writes to me</li>
+        <li><b>Social platforms</b>, only for featuring content the user submitted for that purpose</li>
+        <li><b>Legal</b> disclosure if required by law</li>
+    </ul>
+
+    <p>
+        I do not share face data with advertisers or business partners.
+    </p>
+
+    <h2>9. Retention and deletion (summary)</h2>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Where it is stored</th>
+                    <th>How long it is kept</th>
+                    <th>How to delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Face-distance waveform</td>
+                    <td>User’s device; user’s iCloud if sync is on</td>
+                    <td>Until the workout is deleted</td>
+                    <td>Delete the workout in the App; iCloud follows Apple’s sync; email me if you also sent a report</td>
+                </tr>
+                <tr>
+                    <td>Other workout records</td>
+                    <td>Same</td>
+                    <td>Until deleted</td>
+                    <td>Same</td>
+                </tr>
+                <tr>
+                    <td>HealthKit copies</td>
+                    <td>Apple Health on the user’s devices / Apple’s Health iCloud if the user uses it</td>
+                    <td>Under the user’s Health settings and Apple’s rules</td>
+                    <td>Health app / Settings, and in-App workout delete when permitted</td>
+                </tr>
+                <tr>
+                    <td>Diagnostic email I receive</td>
+                    <td>My email inbox</td>
+                    <td>As long as reasonably needed to improve detection and the App</td>
+                    <td>Email <a href="mailto:info@genebogdanovich.com">info@genebogdanovich.com</a></td>
+                </tr>
+                <tr>
+                    <td>Featuring submission</td>
+                    <td>My email; possibly official social accounts</td>
+                    <td>Until removed on request, or as long as the post remains if the user has not asked to take it down</td>
+                    <td>Email a removal request</td>
+                </tr>
+                <tr>
+                    <td>Analytics / crash logs</td>
+                    <td>Google Firebase</td>
+                    <td>Per Google’s and my then-current analytics retention</td>
+                    <td>Limited; these are not used to identify you as a customer account, because the App has no account</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>10. Children’s privacy</h2>
+
+    <p>
+        Pushanova is a <b>general-audience</b> app. Its App Store age rating is <b>4+</b>. It is <b>not directed at children under 13</b>, and I do not knowingly collect personal information from children under 13.
+    </p>
+
+    <p>
+        TrueDepth is not used to identify children. Distance measurements stay on the user’s device and, if enabled, the user’s iCloud. I do not receive them unless someone emails a report.
+    </p>
+
+    <p>
+        I do not want diagnostic reports or featuring submissions from children under 13. If I learn that I received personal information from a child under 13, I will delete the copy I control.
+    </p>
+
+    <p>
+        Featuring submissions have a higher age rule. See Section 4 (16+, with a limited 13–15 parental-permission rule only where local law allows it, and 16+ where that is the digital age of consent).
+    </p>
+
+    <p>
+        Parents or guardians who believe a child sent information to <a href="mailto:info@genebogdanovich.com">info@genebogdanovich.com</a> should write to that address.
+    </p>
+
+    <h2>11. Your rights and requests</h2>
+
+    <p>
+        Depending on where you live (including the EEA, United Kingdom, and similar regimes), you may have the right to ask what personal information I hold, to correct it, to delete it, to restrict or object to certain processing, or to complain to a data-protection authority.
+    </p>
+
+    <p>
+        Because Pushanova has no user accounts, most App data is only on your device and in your Apple accounts (iCloud, Health, App Store). I can act on copies <b>I</b> actually received, such as emails.
+    </p>
+
+    <p>
+        To make a request, email <a href="mailto:info@genebogdanovich.com">info@genebogdanovich.com</a>. I may need enough detail to find the message (for example, the address you wrote from and the approximate date).
+    </p>
+
+    <p>
+        I do not sell personal information, including as that idea is used under California law.
+    </p>
+
+    <h2>12. International processing</h2>
+
+    <p>
+        I am based in the <b>Republic of Belarus</b>. If you email me, or if Apple or Google process data as described above, information may be processed in Belarus, in the United States, in the European Union, or in other countries where those providers operate. Those places may have different data-protection laws from your country.
+    </p>
+
+    <h2>13. Third-party sites and platforms</h2>
+
+    <p>
+        The App may link to Instagram, the App Store, or other sites I do not control. Their privacy practices are their own.
+    </p>
+
+    <h2>14. Changes</h2>
+
+    <p>
+        I may update this Privacy Policy. The “Last updated” date will change when I do. The current version is the one published at the URL provided in the App Store listing and in the App.
+    </p>
+
+    <h2>15. Contact</h2>
+
+    <p>
+        Yauhen Bahdanovich<br>
+        Pushanova<br>
+        Email: <a href="mailto:info@genebogdanovich.com">info@genebogdanovich.com</a>
+    </p>
+</body>
+</html>
